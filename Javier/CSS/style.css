@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Source Sans 3", sans-serif;
-    
+    scroll-behavior: smooth;
 }
 
 .cabecera{
@@ -77,9 +77,64 @@
     margin-bottom: 20px;
 }
 
+.botonMiembro{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid hsla(0, 0%, 100%, .3);
+    background: hsla(0, 0%, 100%, .15);
+    backdrop-filter: blur(10px);
+    transition: all .28s ease;
+    font-size: 1.2rem;
+}
+
+.botonMiembro:hover{
+    transform: scale(1.1);
+    background-color: #08A3BF;
+    box-shadow: 0 12px 30px hsla(199, 37%, 65%, 0.281);
+}
+
 .botonMiembro a{
     text-decoration: none;
+    color: #fff;
 }
+
+#miembrosEquipo{
+    display: flex;
+    width: 100%;
+    height: 890px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+.miembros img{
+    width: 300px;
+    transition: all .28s ease;
+}
+
+.miembros img:hover{
+    transform: scale(1.1);
+    box-shadow:  8px 5px 15px 5px hsla(192, 37%, 65%, 0.445);
+}
+
+.miembros p{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.texto{
+    padding: 30px;
+    text-align  : center;
+}
+
 
 
 
