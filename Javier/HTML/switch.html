@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Trabajo, hardware de red">
+    <meta name="description" content="Trabajo sobre los switches en redes informáticas.">
+    <title>Switches</title>
+    <link rel="stylesheet" href="/Francisco/CSS/switch.css">
+</head>
+<body>
+    <header>
+        <h1>Switches (empresa)</h1>
+    </header>
+    <div id="principio">        
+            <section id="definicion">
+                <h2>¿Qué es un switch?</h2>
+                <div id="fotoSwitch">
+                    <img id="mi_foto" alt="Foto Switch" src="switch.jpg ">
+                </div>
+                <p id="definicionSwitch">Un switch es un dispositivo que conecta equipos dentro de una red local (LAN) y envía datos solo al destinatario correcto. Trabaja en la capa de acceso a la red (2ª) enlazando datos entre los dispositivos interconectados a una misma red local.  En entornos empresariales, los switches son esenciales porque gestionan grandes volúmenes de tráfico, ofrecen funciones avanzadas como segmentación de red (VLAN), priorización de tráfico (QoS) y seguridad a nivel de puerto. </p>
+            </section>
+            
+            <nav id="articulos">
+                <ul>
+                        <li><a href="#Conmutacion">Conmutación de tramas dentro de una red local</a></li>
+                        <li><a href="#TablaMAC">Tabla MAC y proceso de conmutación</a></li>
+                        <li><a href="#VLANSEMPRESA">VLANs y segmentación de red </a></li>
+                </ul>
+            </nav>
+    </div>   
+    
+    <div id="TramasConmutacion">
+        <section>
+            <h3 id="Conmutacion">Conmutación de tramas dentro de una red local</h3>
+            <p>El proceso de conmutación es el mecanismo principal mediante el cual un switch envía tramas de datos desde un dispositivo origen hacia su destino dentro de la red, aplicando un filtro, el switch analiza la dirección MAC destino y decide si enviarla o no a los distintos puertos utilizando las direcciones MAC. Aun así, también se pueden configurar. </p>
+            <a href="https://miro.com/welcomeonboard/MHdydytVSlc4YzUzL2d2dVB4YVV1S3ZBSjZuNC9leks4M3ZQdWM5a2V6UGFqMk9FWkNPSWxqUDVDZjJmaWlvZXdsVUdFN0dFTVczME9LYkIrakh0OUh5b1lCeEhvdFhCN0xjaW5NZHk3NmR4VlNxd0NOZk5Fa3lrekNuaHlqU3ZBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=569783722642"><img class="switch-item" src="conmutacion.jpg" alt="Foto Conmutación">CLICK</a>
+            <nav id="Funcionamiento">
+                <p class="Funcionamiento">Funcionamiento General</p>
+                <ol>
+                    <li>Un dispositivo (A) envía una trama hacia otro (B). </li>
+                    <li>El switch recibe la trama en un puerto. </li>
+                    <li>Consulta su tabla de direcciones MAC (MAC address table). </li>
+                    <li>Consulta su tabla de direcciones MAC (MAC address table). </li>
+                    <li>Si no lo conoce, envía la trama por todos los puertos excepto el de origen (flooding), y aprende la MAC de B. </li>
+                </ol>
+            </nav>
+        </section>
+    </div>
+            
+            <div id="TablaMAC">
+                <section>
+                    <h3  id="Tabla">Tabla MAC y proceso de conmutación</h3>
+                    <p>La tabla MAC es una memoria interna del switch que asocia direcciones MAC con puertos físicos. Las direcciones MAC vienen predefinidas en los dispositivos, pues estos dispositivos se conectan al switch y a cada dirección MAC se le asocia a un puerto. Para que esto suceda hay dos formas, la primera es no tocar la tabla MAC, pasará lo explicado anteriormente, flooding (necesario) y aprendiendo todas las direcciones MAC, empezando con el primero, el que envía el dato y asi sucesivamente con los demás conectados al mismo switch, un vez aprendidas, se marcará una distinción y estas direcciones serán dinamicas con una caducidad de no más de 10 minutos. El otro modo es configurar uno mismo la tabla MAC, de este modo la entrada será estática, útil para los dispositivos que no estén en constante tráfico de datos</p>
+                    <table id="Tabla-MAC">
+                        <colgroup id="ejemploMAC" span="4"> </colgroup>
+                        <tr id="Arriba">
+                            <th>Dirección MAC</th>
+                            <th>Puerto</th>
+                            <th>Tipo</th>
+                            <th>Device</th>
+                        </tr>
+                        <tr>
+                            <td>J0:16:2B:38:4C:5E</td>
+                            <td>Puerto 1</td>
+                            <td>Estática</td>
+                            <td>Servidor principal</td>
+                        </tr>
+                        <tr>
+                            <td>31:A2:13:B4:CD:46</td>
+                            <td>Puerto 2</td>
+                            <td>Dinámica</td>
+                            <td>Ordenadore 1</td>
+                        </tr>
+                        <tr>
+                            <td>AA:BB:CC:DD:EE:FF</td>
+                            <td>Puerto 3</td>
+                            <td>Dinámica</td>
+                            <td>Ordenador 2</td>
+                        </tr>
+                        <tr>
+                            <td>89:3B:1C:D6:EE:GG</td>
+                            <td>Puerto 4</td>
+                            <td>Dinámica</td>
+                            <td>Impresora 1</td>
+                        </tr>
+                        <tr>
+                            <td>GG:WP:GG:WP:NT:NT</td>
+                            <td>Puerto 5</td>
+                            <td>Dinámica</td>
+                            <td>Impresora 2</td>
+                        </tr>
+                    </table>
+                    <p>Cuando un switch recibe una trama en un puerto: 
+                        <ul>
+                            <li>Si la dirección está en la tabla MAC:
+                                El switch envía la trama solo por el puerto asociado.</li>
+                            <li>Si la dirección NO está en la tabla MAC:
+                                El switch envía la trama a todos los puertos excepto el de origen.</li>
+                        </ul>
+                        Si no se detecta trafico en un puerto durante un tiempo, la entrada correspondiente en la tabla MAC puede eliminarse para liberar espacio y mantener la tabla actualizada.
+                    </p>
+                </section>
+            </div>
+            
+            <div id="VLANSEMPRESA">
+                <section>
+                    <h3  id="VLANs">VLANs y segmentación de red</h3>
+                    <h4>¿Qué son los VLANs?</h4>
+                    <p>Permite dividir una red física en varias redes lógicas independientes, incluso si los dispositivos están conectados al mismo switch físico. Cada VLAN funciona como si fuera una red separada, lo que aumenta la seguridad y mejora la gestión del tráfico. Una empresa puede separar el switch de 8 puertos en 8 puertos o de cualquier otra forma en VLANs para evitar la comunicación entre, por ejemplo, los pisos; recursos humanos, administración, etc y solo pueden comunicarse entre el mismo VLAN, y si están conectados a una router pueden comunicarse entre ellos. </p>
+                    <h4>¿Cómo funciona la segmentacion de red?</h4>
+                    <p>Se trata de dividir una red en subredes más pequeñas, con el objetivpde de limtar el tráfico, controlar el acceso y mejorar la seguridad, haciendo de esto un funcionamiento mucho mas optimo</p>
+                    <h4>Red corporativa</h4>
+                    <p>Un ejemplo en una red corporativa: <br> Imagina que en una empresa tienes 3 departamentos. Administracion, Ventas y Soporte técnico</p>
+                    <table id="VLANs-eg"> 
+                        <colgroup id="ejemploVLAN" span="4"> </colgroup>
+                        <tr>
+                            <th>Departamento</th>
+                            <th>VLAN</th>
+                            <th>Rango IP</th>
+                            <th>Restricciones</th>
+                        </tr>
+                        <tr>
+                            <td>Administración</td>
+                            <td>VLAN 10</td>
+                            <td>192.65.45.10</td>
+                            <td>Aislado</td>
+                        </tr>
+                        <tr>
+                            <td>Ventas</td>
+                            <td>VLAN 20</td>
+                            <td>192.65.45.20</td>
+                            <td>Aislado</td>
+                        </tr>
+                        <tr>
+                            <td>Soporte técnico</td>
+                            <td>VLAN 30</td>
+                            <td>192.65.45.30</td>
+                            <td>Sin restricciones de acceso</td>
+                        </tr>
+                    </table>
+                </section>
+            </div> 
+</body>
+</html>
