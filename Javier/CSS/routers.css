@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*CSS DE LA PÁGINA*/
+
+.tituloPrinc{
+    font-size: 3.3em;
+    margin: 30px 0 0 30px;
+    color: #4338ca;
+}
+
+.subtitulo{
+    margin-top: 20px;
+    font-size: 1.3em;
+    margin-left: 60px;
+    color: #3b3b3c;
+}
+
+.defin{
+    margin: 30px 50px;
+    font-size: 1.5em;
+}
+
+
+.containerFlex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.textoContainer{
+    max-width: 900px;
+    margin-top: 30px;
+}
+
+.titDef{
+    color: #4338ca;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.imgGif{
+    position: relative;
+    bottom: 48px;
+    right: 118px;
+}
+
+.cajadef{
+    color: #1e3a8a;
+    background-color: #eff6ff;
+    margin:  0 30px;
+    border-left: 7px solid #1e3a8a;
+}
+
+.cajadef h4{
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+.cajadef ul{
+   padding-left: 50px;
+}
+
+.itemDef{
+    padding: 20px;
+}
+
+.titEjem{
+    color: #4338ca;
+    margin: 20px 30px;
+}
+
+.textEjem{
+    padding: 30px;
+}
+.ejemplo{
+    font-size: 1.5em;;
+}
+
+.ilustaciones{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.listaOrdenada{
+    margin: auto;
+    max-width: max-content;
+}
+
+.itemOrdenada{
+    margin-bottom: 30px;
+}
+
+.itemIlus{
+    border: #4338ca 3px dotted;
+    padding: 40px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.active{
+    background-color: #4338ca;
+    color: #fff;
+}
+
+.desactive{
+    background-color: rgb(224 231 255);
+    color: #4338ca;
+}
+
+.buttonContainer{
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.buttonModel{
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+}
+
+
+.tipoRouters{
+    margin: 40px;
+    font-size: 1.5em;
+}
+
+.titRouter{
+    color: #4338ca;
+    margin-bottom: 20px;
+}
+
+/*CSS para Caja Información (NO TOCAR)*/
+
+.containerTexto{
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    height: 80vh;
+    margin: 50px;
+    top: 1207px;
+    left: 147px;
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 10px 144px 168px rgba(0,0,0,0.6);
+    border-radius: 30px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.containerTexto h3{
+    color: #4338ca;
+    margin-bottom: 14px;
+}
+
+.apagar{
+    transform: scale(0);
+}
+
+.quitar{
+    display: none;
+}
+
+.eliminar{
+    position: absolute;
+    top: 14px;
+    right: 20px;        
+}
+
+
+
+
+/*CSS del Menu  y footer(NO TOCAR)*/
+
+a{
+    text-decoration: none;
+    color: #3b3b3c;
+}
+
+.cabecera{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #faf9f8;
+}
+
+.listaMenu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #3b3b3c;
+}
+
+.listaMenu li{
+    position: relative;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.lineaBottom::after{
+    content: "";
+    left: 0;
+    width: 0;
+    bottom: 0;
+    height: 1px;
+    position: absolute;
+    background: #c78b86;
+    transition: width .28s ease-in-out
+    
+}
+
+.lineaBottom:hover::after{
+    width: 100%;
+}
+
+
+.spanAfter{
+    position: absolute;
+    background-color: #08A3BF;;
+    left: -50px;
+    top: 60px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 18px;
+    opacity: 0;
+    transition: opacity .7s ease-in-out;
+}
+
+
+
+.spanAfter::after{
+    content: "";
+    position: absolute;
+    top: -18px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #08A3BF;
+}
+
+.spanAfter a{
+    color: #fff;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+
+}
+
+.texto{
+    padding: 30px;
+    text-align  : center;
+}
+
+
+
+
+

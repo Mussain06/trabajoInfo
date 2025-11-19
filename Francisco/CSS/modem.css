@@ -5,7 +5,7 @@ body {
     color:black;
 }
 /*-----HEADER------*/
-header {
+.tituloPrincipal {
     /*color y borde*/
     background: #fbafff;
     border-radius: 12px;
@@ -16,15 +16,14 @@ header {
     margin: 30px auto 10px;
     padding: 20px;
 }
-header h1 {
+.tituloPrincipal h1 {
     margin: 0;
     font-size: 32px;
     color: #000000;
 }
 /*------NAV--------*/
-nav {
+#articulos {
     /**posicionamiento y algun color*/
-    position: sticky;
     top: 1px;
     background: white;
     max-width: 95%;
@@ -35,7 +34,7 @@ nav {
     border-radius: 12px;
     box-shadow: 0 1px 6px rgb(255 255 255 / 10%);
 }
-nav ul {
+#articulos ul {
     /*Puse los links de manera similar a la galeria que hicimos, que no se pierda texto si menguamos pantalla*/
     list-style: none;
     margin: 0;
@@ -45,7 +44,7 @@ nav ul {
     flex-wrap: wrap;
     gap: 16px;
 }
-nav a {
+#articulos a {
     /*Como se veran los enlaces interactivos de arriba*/
     display: block;
     padding: 10px 20px;
@@ -56,9 +55,105 @@ nav a {
     transition: 0.6s cubic-bezier(0.2, 0.83, 1, 0.66);
     background: #f8f8f8;
 }
-nav a:hover {
+#articulos a:hover {
     background: #f9adfd;
 }
+
+a{
+    text-decoration: none;
+    color: #3b3b3c;
+}
+
+.cabecera{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #faf9f8;
+}
+
+.listaMenu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #3b3b3c;
+}
+
+.listaMenu li{
+    position: relative;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.lineaBottom::after{
+    content: "";
+    left: 0;
+    width: 0;
+    bottom: 0;
+    height: 1px;
+    position: absolute;
+    background: #c78b86;
+    transition: width .28s ease-in-out
+    
+}
+
+.lineaBottom:hover::after{
+    width: 100%;
+}
+
+
+.spanAfter{
+    position: absolute;
+    background-color: #08A3BF;;
+    left: -50px;
+    top: 60px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 18px;
+    opacity: 0;
+    transition: opacity .7s ease-in-out;
+}
+
+
+
+.spanAfter::after{
+    content: "";
+    position: absolute;
+    top: -18px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #08A3BF;
+}
+
+.spanAfter a{
+    color: #fff;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+
+}
+
+.texto{
+    padding: 30px;
+    text-align  : center;
+}
+
 /*-----------DEFINICION---------------*/
 #definicionModem {
     max-width: 95%;
@@ -72,7 +167,7 @@ nav a:hover {
 #fotoModem {/*la foto no se como ponerla para que no moleste*/
     float: right;
     width: 30%;
-    text-align: ;
+    text-align: center;
     top:40%auto;
 }
 #mi_foto {

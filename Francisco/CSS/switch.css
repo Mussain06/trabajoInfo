@@ -1,14 +1,107 @@
 /*-----------------CABECERA, cambiar ridge o poner en sticky y cosas asi-----*/
-header{ /*Que cada uno ponga sus coores y formas*/
+.titulo{ /*Que cada uno ponga sus coores y formas*/
     background-color: rgb(255 255 255);
     border-top: ridge 5px rgb(255 255 255 / 40%);
     border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: #3b3b3c;
+}
+
+.cabecera{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #faf9f8;
+}
+
+.listaMenu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #3b3b3c;
+}
+
+.listaMenu li{
+    position: relative;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.lineaBottom::after{
+    content: "";
+    left: 0;
+    width: 0;
+    bottom: 0;
+    height: 1px;
+    position: absolute;
+    background: #c78b86;
+    transition: width .28s ease-in-out
+    
+}
+
+.lineaBottom:hover::after{
+    width: 100%;
+}
+
+
+.spanAfter{
+    position: absolute;
+    background-color: #08A3BF;;
+    left: -50px;
+    top: 60px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 18px;
+    opacity: 0;
+    transition: opacity .7s ease-in-out;
+}
+
+
+
+.spanAfter::after{
+    content: "";
+    position: absolute;
+    top: -18px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #08A3BF;
+}
+
+.spanAfter a{
+    color: #fff;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+
+}
+
+.texto{
+    padding: 30px;
+    text-align  : center;
 }
 /*-------FONDO----------*/
 /*--------Solo es el fondo podeis poner imagenes o cambiarle colores*/
 body{/*posibilidad de poner una imagen de fondo, yo pondré un color*/
 	background-color: #a9ffb1;
-    background-image: url(imagendealgo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -22,14 +115,14 @@ body{/*posibilidad de poner una imagen de fondo, yo pondré un color*/
 	box-shadow: 3px 4px 10px rgb(0 0 0 / 100%);
 }
 /*-----------NAV colores----------*/
-nav li a:hover {/*Cambiar collores y la sombra */
+#articulos li a:hover {/*Cambiar collores y la sombra */
     font-size:19px;
 	background: rgb(255 255 255);
     color: #000000;
     transform: translateY(-2px);
     box-shadow: 3px 4px 10px rgb(0 0 0 / 35%);
 }
-nav li a {/*Lo mismo que arriba*/
+#articulos li a {/*Lo mismo que arriba*/
 	font-size:18px;
 	background: linear-gradient(rgb(193 255 172 / 80%), rgb(64 250 1 / 60%));
     border-radius: 100px;
@@ -55,7 +148,7 @@ nav li a {/*Lo mismo que arriba*/
 	float: center;
 	padding-left: 25%;
 }
-a{
+.conmutaciónImg{
 	font-size:10px;
 	color:#434343;
 }
@@ -84,12 +177,11 @@ a{
 /*posiciones cambiables para todos*/
 
 /*------------------HEADER----------------*/
-header {/*Se puede poner sticky para dejar el nombre*/
+.titulo {/*Se puede poner sticky para dejar el nombre*/
 	/****position: fixed;
 	z-index: 9999;*****/
 	max-width: 95%;
     margin: 0 auto;
-	position: sticky;
 	z-index: 777777;
 	text-align: center;
 	top: 5px;
@@ -98,6 +190,7 @@ header {/*Se puede poner sticky para dejar el nombre*/
 	width: 93%; 
 	border-radius: 20px; 
 	border-color: #654444;
+    margin-top: 20px;
 }
 /*-----------------DEFINICIÓN y NAV-----------------*/
 #principio {
@@ -125,19 +218,19 @@ header {/*Se puede poner sticky para dejar el nombre*/
 	height:50%;
 }
 /*------------------NAV----------------*/
-nav {
+#articulos {
    position: relative;
    top: 57%;
    width: 40%;
 }
-nav ul {
+#articulos ul {
     list-style-type: none;
     margin: 1px;
     display: flex;
     flex-direction: column;
     gap: 20px; 
 }
-nav a {
+#articulos a {
     display: block;
     text-align: center;
     text-decoration: none;
