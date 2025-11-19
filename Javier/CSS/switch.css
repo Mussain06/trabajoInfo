@@ -1,17 +1,25 @@
+
+/*-------FONDO----------*/
+/*--------Solo es el fondo podeis poner imagenes o cambiarle colores*/
+body{
+	/*posibilidad de poner una imagen de fondo, yo pondré un color*/
+	background-color: #5a5a5a75;
+    font-family: 'Arial', sans-serif;
+    color:black;
+	    line-height: 1.6;
+    font-size: 14px;
+}
 /*-----------------CABECERA, cambiar ridge o poner en sticky y cosas asi-----*/
 header{ /*Que cada uno ponga sus coores y formas*/
     background-color: rgb(255 255 255);
     border-top: ridge 5px rgb(255 255 255 / 40%);
     border-radius: 10px;
 }
-/*-------FONDO----------*/
-/*--------Solo es el fondo podeis poner imagenes o cambiarle colores*/
-body{/*posibilidad de poner una imagen de fondo, yo pondré un color*/
-	background-color: #5a5a5a;
-    background-image: url(imagendealgo.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+h1{
+	font-size:40px;
+}
+h4{
+	color:#434343;
 }
 #definicion{ /*Apartado de fto y definición, se puede poner como body sin más, cambiar foto o colocar a la izq*/
     font-size: 21px;
@@ -35,15 +43,7 @@ nav li a {/*Lo mismo que arriba*/
     border-radius: 100px;
 	color: black;
 }
-/*Parte donde esta la teoria, lo mismo se puede displayear como columnas como en la galeria*/
-#TramasConmutacion, #TablaMAC, #VLANSEMPRESA{
-	font-size:24px;
-	background: #ffffff85;
-    border-radius: 10px; 
-    border: 1px solid rgb(255 255 255 / 50%);
-    border-color: #0000007d;
-	box-shadow: 3px 4px 10px rgb(0 0 0 / 65%);
-}
+/*------FOTO----------*/
 .switch-item:hover{/*necesario ya que la foto contiene una URL, */
 	transition: 0.7s cubic-bezier(0.93, 0.1, 0, 0.86);
 	transform:scale(1.1);
@@ -58,27 +58,6 @@ nav li a {/*Lo mismo que arriba*/
 a{
 	font-size:10px;
 	color:#434343;
-}
-#TramasConmutacion:hover {
-	background: rgb(255 255 255);
-    color: #000000;
-	transform: scale(1.01); /*se pueden hacer desplazamientos  los lados, por si quereis cambiar esto*/
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
-}
-/*Los otros dos de abajo*/
-#TablaMAC:hover {
-	background: rgb(255 255 255);
-    color: #000000;
-	transform: scale(1.01);
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
-}
-#VLANSEMPRESA:hover {
-
-	background: rgb(255 255 255);
-    color: #000000;
-   	transform: scale(1.01);
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
-	
 }
 /*----------------------------------------*/
 
@@ -155,28 +134,54 @@ nav a {
     padding: 11px;
     transition: 0.7s ease;
 }
-/*EXclusivo th y td separado*/
+/*interaccion con los usuarios*/
+/*Parte donde esta la teoria, lo mismo se puede displayear como columnas como en la galeria*/
+#TramasConmutacion, #TablaMAC, #VLANSEMPRESA{
+	font-size:24px;
+	background: #ffffff85;
+    border-radius: 10px; 
+    border: 1px solid rgb(255 255 255 / 50%);
+    border-color: #0000007d;
+	box-shadow: 3px 4px 10px rgb(0 0 0 / 65%);
+}
+#TramasConmutacion:hover {
+	background: rgb(255 255 255);
+    color: #000000;
+	transform: scale(1.01); /*se pueden hacer desplazamientos  los lados, por si quereis cambiar esto*/
+    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
+}
+/*Los otros dos de abajo*/
+#TablaMAC:hover {
+	background: rgb(255 255 255);
+    color: #000000;
+	transform: scale(1.01);
+    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
+}
+#VLANSEMPRESA:hover {
+
+	background: rgb(255 255 255);
+    color: #000000;
+   	transform: scale(1.01);
+    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
+	
+}
+/*-------------TABLAS-------------*/
 td:hover{/*Meramente decorativo para dar flasa sensacion de interactividad*/
 	background: #7cdaff;
 	transition: 0.7s ease;
 }
 th{ 
-	font-weight: bold;
 	background-color:#5f8299;
-	font-size:19px;
 }
-/*tabla en general*/
 table {
-	font-size: x-large;
 	width: 90%;
+	align-items: anchor-center;
     border-collapse: collapse;
     margin-top: 18px;
     background: #ffffff;
-    box-shadow: 0 2px 6px rgb(0 0 0 / 59%);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 th, td {
-	
-	font-size: xxx-large;
     padding: 10px 12px;
     border: 1px solid #000000;
     text-align: left;
