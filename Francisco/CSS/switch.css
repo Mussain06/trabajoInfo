@@ -7,7 +7,7 @@ header{ /*Que cada uno ponga sus coores y formas*/
 /*-------FONDO----------*/
 /*--------Solo es el fondo podeis poner imagenes o cambiarle colores*/
 body{/*posibilidad de poner una imagen de fondo, yo pondré un color*/
-	background-color: #5a5a5a;
+	background-color: #a9ffb1;
     background-image: url(imagendealgo.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -15,7 +15,7 @@ body{/*posibilidad de poner una imagen de fondo, yo pondré un color*/
 }
 #definicion{ /*Apartado de fto y definición, se puede poner como body sin más, cambiar foto o colocar a la izq*/
     font-size: 21px;
-	background: linear-gradient(rgb(254 251 248 / 80%), rgb(132 114 114 / 60%));
+	background: linear-gradient(rgb(193 255 172 / 80%), rgb(64 250 1 / 60%));
     border-radius: 10px; 
 	border: 1px solid rgb(255 255 255 / 52%);
 	border-color: #000000ba;
@@ -31,7 +31,7 @@ nav li a:hover {/*Cambiar collores y la sombra */
 }
 nav li a {/*Lo mismo que arriba*/
 	font-size:18px;
-    background: linear-gradient(rgb(234 232 234), rgb(149 138 147));
+	background: linear-gradient(rgb(193 255 172 / 80%), rgb(64 250 1 / 60%));
     border-radius: 100px;
 	color: black;
 }
@@ -60,21 +60,20 @@ a{
 	color:#434343;
 }
 #TramasConmutacion:hover {
-	background: rgb(255 255 255);
+	background: rgb(112 209 255);
     color: #000000;
 	transform: scale(1.01); /*se pueden hacer desplazamientos  los lados, por si quereis cambiar esto*/
     box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
 }
 /*Los otros dos de abajo*/
 #TablaMAC:hover {
-	background: rgb(255 255 255);
+	background: rgb(112 209 255 / 84%);
     color: #000000;
 	transform: scale(1.01);
     box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
 }
 #VLANSEMPRESA:hover {
-
-	background: rgb(255 255 255);
+	background: rgb(112 209 255);
     color: #000000;
    	transform: scale(1.01);
     box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
@@ -88,9 +87,12 @@ a{
 header {/*Se puede poner sticky para dejar el nombre*/
 	/****position: fixed;
 	z-index: 9999;*****/
-	position: relative;
+	max-width: 95%;
+    margin: 0 auto;
+	position: sticky;
+	z-index: 777777;
 	text-align: center;
-	top: 0.6%;
+	top: 5px;
 	left: 2%;
 	height: 10%; 
 	width: 93%; 
@@ -155,31 +157,40 @@ nav a {
     padding: 11px;
     transition: 0.7s ease;
 }
-/*EXclusivo th y td separado*/
 td:hover{/*Meramente decorativo para dar flasa sensacion de interactividad*/
-	background: #7cdaff;
+	background: #c9f0ff;
 	transition: 0.7s ease;
 }
 th{ 
-	font-weight: bold;
-	background-color:#5f8299;
-	font-size:19px;
+	background-color:#aeff8b;
 }
-/*tabla en general*/
 table {
-	font-size: x-large;
 	width: 90%;
+	align-items: anchor-center;
     border-collapse: collapse;
     margin-top: 18px;
     background: #ffffff;
-    box-shadow: 0 2px 6px rgb(0 0 0 / 59%);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 th, td {
-	
-	font-size: xxx-large;
     padding: 10px 12px;
     border: 1px solid #000000;
     text-align: left;
     vertical-align: top;
     font-size: 0.94rem;
+}
+/*---FOOTER-----*/
+/*-----FOOTER-----*/
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+footer a {
+    text-decoration: none;
+    color: #3fb0e8;
+    font-size: 14px;
+}
+footer a:hover {
+    color: #1683ff;
 }

@@ -6,54 +6,75 @@
     <meta name="keywords" content="Trabajo, hardware de red">
     <meta name="description" content="Trabajo sobre los switches en redes informáticas.">
     <title>Modems</title>
-    <link rel="stylesheet" href="/Francisco/CSS/modem.css">
+    <link rel="stylesheet" href="/Francisco/CSS/modem.css"> 
 </head>
 <body>
     <header>
-        <h1 id="inicio">Modems</h1>
-        <nav>
-            <li>definicion</li>
-            <ul>
-                <p id="tiposModem">Tipos</p>
-                <li>Definicion de Módem</li>
-                <li>ADSL/xDSL</li>
-                <li>Cable (DOCSIS)</li>
-                <li>Fibra Óptica</li>
-                <li>Satelital</li>
-                <li>Móvil (3G/4G/5G)</li>
-            </ul>
-        </nav>
+        <h1 id="inicio">Modems</h1>    
     </header>
-    <div id="definicionModem">
-        <section>
+    <nav id="articulos">
+        <ul>
+            
+            <li><a href="#ModemADSL">ADSL/xDSL</a></li>
+            <li><a href="#ModemCableDOCSIS">DOCSIS</a></li>
+            <li><a href="#Fibraóptica">Fibra Óptica</a></li>
+            <li><a href="#ModemSatelital">Satelital</a></li>
+            <li><a href="#ModemMovil">Móvil</a></li>
+        </ul>
+    </nav>
+    <section id="definicionModem">
+        <div>
             <h2>¿Qué es un modem?</h2>
-            <div>
+            <div id="fotoModem">
                 <img id="mi_foto" alt="Foto Modem" src="modem.jpg ">
             </div>
-            <p id="definicionModem">Un módem (modulador-demodulador) es un dispositivo que convierte las señales digitales de una computadora en señales analógicas para su transmisión a través de líneas telefónicas u otros medios de comunicación, y viceversa. Permite la conexión a Internet y la comunicación entre redes. Los módems pueden ser internos (tarjetas instaladas dentro de la computadora) o externos (dispositivos independientes conectados a través de puertos como USB o Ethernet). En resumen Modula al convierte datos digitales en señales analógicas, de radiofrecuencia o luminosas, según la tecnología (PSTN, coaxial, fibra, celular, etc.) y Demodula, transforma la señal recibida del ISP nuevamente en datos digitales para ser utilizados por la red local. </p>
-        </section>
-    </div>
-    <section>
+            <p id="que_esModem">Un módem (modulador-demodulador) es un dispositivo que convierte las señales digitales de una computadora en señales analógicas para su transmisión a través de líneas telefónicas u otros medios de comunicación, y viceversa. Permite la conexión a Internet y la comunicación entre redes. Los módems pueden ser internos (tarjetas instaladas dentro de la computadora) o externos (dispositivos independientes conectados a través de puertos como USB o Ethernet). En resumen modula al conviertir datos digitales en señales analógicas, de radiofrecuencia o luminosas, según la tecnología (PSTN, coaxial, fibra, celular, etc.) y demodula, transforma la señal recibida del ISP nuevamente en datos digitales para ser utilizados por la red local. </p>
+        </div>
+    </section>
+    <section class="tiposModem">
         <div id="ModemADSL">
             <h3>Módem ADSL</h3>
+                <h4>¿Que es un módem ADSL/xDSL?</h4>
+                    <p>El módem ADSL (Asymmetric Digital Subscriber Line) es un tipo de módem que utiliza el par de cobre de la línea telefónica tradicional para proporcionar conexión a Internet. Permite transmitir datos y voz en el mismo cable gracias a la separación de frecuencias.</p>
+                <h4>Funcionamiento del módem ADSL/xDSL</h4>
+                    <p>El módem ADSL modula la señal digital para enviarla como señales analógicas de alta frecuencia por el par de cobre. En la central telefónica, el DSLAM demodula esa señal y la conecta a Internet.</p>
         </div>
         
         <div id="ModemCableDOCSIS">
             <h3>Módem de cable</h3>
+                <h4>¿Qué es un módem de cable DOCSIS?</h4>
+                    <p>El módem de cable DOCSIS (Data Over Cable Service Interface Specification) es un dispositivo que permite la conexión a Internet a través de redes de televisión por cable. Utiliza el cable coaxial para transmitir datos a alta velocidad.</p>
+                <h4>Funcionamiento del módem de cable DOCSIS</h4>
+                    <p>El módem de cable modula las señales digitales en frecuencias adecuadas para su transmisión por el cable coaxial. En la cabecera de la red de cable, un CMTS demodula las señales y las conecta a Internet.</p>
         </div>
         
         <div id="Fibraóptica">
             <h3>Módem de fibra óptica</h3>
-        </div>
+                <h4>¿Qué es un módem de fibra óptica?</h4>
+                    <p>El módem de fibra óptica, también conocido como ONT (Optical Network Terminal), es un dispositivo que convierte las señales ópticas transmitidas a través de cables de fibra óptica en señales eléctricas que pueden ser utilizadas por dispositivos electrónicos.</p>
+                <h4>Funcionamiento del módem de fibra óptica</h4>
+                    <p>El módem de fibra óptica recibe señales de luz a través del cable de fibra óptica y las convierte en señales eléctricas. En la central de la red de fibra, un OLT (Optical Line Terminal) modula las señales eléctricas en luz para su transmisión.</p>
+            </div>
         
         <div id="ModemSatelital">
             <h3>Módem satelital</h3>
+                <h4>¿Qué es un módem satelital?</h4>
+                    <p>El módem satelital es un dispositivo que permite la conexión a Internet mediante la comunicación con satélites en órbita. Es especialmente útil en áreas rurales o remotas donde otras formas de conexión no están disponibles.</p>
+                <h4>Funcionamiento del módem satelital</h4>
+                    <p>El módem satelital modula las señales digitales en frecuencias de radio adecuadas para su transmisión al satélite. El satélite recibe estas señales y las retransmite a una estación terrestre que las conecta a Internet.</p>
         </div>
 
         <div id="ModemMovil">
             <h3>Módem móvil</h3>
+                <h4>¿Qué es un módem móvil?</h4>
+                    <p>El módem móvil es un dispositivo que permite la conexión a Internet utilizando redes de telefonía móvil (3G, 4G, 5G). Puede ser un módem USB, un hotspot portátil o una tarjeta SIM integrada en un dispositivo.</p>
+                <h4>Funcionamiento del módem móvil</h4>
+                    <p>El módem móvil se conecta a la red celular y modula las señales digitales en frecuencias de radio utilizadas por la red móvil. La torre celular recibe estas señales y las conecta a Internet.</p>
         </div>
     </section>
-    <p id="volver" href="#inicio">RETURN</p>
+    
+    <footer>
+        <a href="#inicio">RETURN</a>
+    </footer>
 </body>
 </html>
