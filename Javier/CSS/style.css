@@ -5,10 +5,23 @@
     font-family: "Source Sans 3", sans-serif;
     scroll-behavior: smooth;
 }
+<<<<<<< Updated upstream
 svg{
     height: 80px;
     width: 200px;
 }
+=======
+
+.containerImg{
+    display: flex;
+    justify-content: center;
+}
+
+.imgHtml{
+    height: 60px;
+}
+
+>>>>>>> Stashed changes
 a{
     text-decoration: none;
     color: #3b3b3c;

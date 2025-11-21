@@ -6,6 +6,15 @@
     scroll-behavior: smooth;
 }
 
+.containerImg{
+    display: flex;
+    justify-content: center;
+}
+
+.imgHtml{
+    height: 60px;
+}
+
 svg{
     height: 80px;
     width: 200px;

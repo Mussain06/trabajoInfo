@@ -6,6 +6,15 @@
     scroll-behavior: smooth;
 }
 
+.containerImg{
+    display: flex;
+    justify-content: center;
+}
+
+.imgHtml{
+    height: 60px;
+}
+
 a{
     text-decoration: none;
     color: #3b3b3c;
