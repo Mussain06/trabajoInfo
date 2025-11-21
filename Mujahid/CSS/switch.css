@@ -1,27 +1,34 @@
-/*-----------------CABECERA, cambiar ridge o poner en sticky y cosas asi-----*/
-.titulo{ /*Que cada uno ponga sus coores y formas*/
-    background-color: rgb(255 255 255);
-    border-top: ridge 5px rgb(255 255 255 / 40%);
-    border-radius: 10px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+    scroll-behavior: smooth;
+
 }
-a{
+
+body {
+    background-color: #faf9f8;
+}
+
+a {
     text-decoration: none;
     color: #3b3b3c;
 }
 
-.cabecera{
+.cabecera {
     position: sticky;
     top: 0;
     z-index: 200;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-evenly;
     background-color: #faf9f8;
 }
 
-.listaMenu{
+.listaMenu {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -33,13 +40,13 @@ a{
     color: #3b3b3c;
 }
 
-.listaMenu li{
+.listaMenu li {
     position: relative;
     padding: 10px 0px;
     cursor: pointer;
 }
 
-.lineaBottom::after{
+.lineaBottom::after {
     content: "";
     left: 0;
     width: 0;
@@ -48,17 +55,17 @@ a{
     position: absolute;
     background: #c78b86;
     transition: width .28s ease-in-out
-    
 }
 
-.lineaBottom:hover::after{
+.lineaBottom:hover::after {
     width: 100%;
 }
 
 
-.spanAfter{
+.spanAfter {
     position: absolute;
-    background-color: #08A3BF;;
+    background-color: #08A3BF;
+    ;
     left: -50px;
     top: 60px;
     width: 250px;
@@ -73,7 +80,7 @@ a{
 
 
 
-.spanAfter::after{
+.spanAfter::after {
     content: "";
     position: absolute;
     top: -18px;
@@ -84,206 +91,199 @@ a{
     border-bottom: 20px solid #08A3BF;
 }
 
-.spanAfter a{
+.spanAfter a {
     color: #fff;
 }
 
-footer{
+footer {
     background-color: #000;
     color: #fff;
 
 }
-
 .texto{
     padding: 30px;
     text-align  : center;
 }
-/*-------FONDO----------*/
-/*--------Solo es el fondo podeis poner imagenes o cambiarle colores*/
-body{/*posibilidad de poner una imagen de fondo, yo pondré un color*/
-	background-color: #a9ffb1;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
-#definicion{ /*Apartado de fto y definición, se puede poner como body sin más, cambiar foto o colocar a la izq*/
-    font-size: 21px;
-	background: linear-gradient(rgb(193 255 172 / 80%), rgb(64 250 1 / 60%));
-    border-radius: 10px; 
-	border: 1px solid rgb(255 255 255 / 52%);
-	border-color: #000000ba;
-	box-shadow: 3px 4px 10px rgb(0 0 0 / 100%);
-}
-/*-----------NAV colores----------*/
-#articulos li a:hover {/*Cambiar collores y la sombra */
-    font-size:19px;
-	background: rgb(255 255 255);
-    color: #000000;
-    transform: translateY(-2px);
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 35%);
-}
-#articulos li a {/*Lo mismo que arriba*/
-	font-size:18px;
-	background: linear-gradient(rgb(193 255 172 / 80%), rgb(64 250 1 / 60%));
-    border-radius: 100px;
-	color: black;
-}
-/*Parte donde esta la teoria, lo mismo se puede displayear como columnas como en la galeria*/
-#TramasConmutacion, #TablaMAC, #VLANSEMPRESA{
-	font-size:24px;
-	background: #ffffff85;
-    border-radius: 10px; 
-    border: 1px solid rgb(255 255 255 / 50%);
-    border-color: #0000007d;
-	box-shadow: 3px 4px 10px rgb(0 0 0 / 65%);
-}
-.switch-item:hover{/*necesario ya que la foto contiene una URL, */
-	transition: 0.7s cubic-bezier(0.93, 0.1, 0, 0.86);
-	transform:scale(1.1);
-	filter: brightness(0.93);
-}
-.switch-item{ /*Necesaro para que no se salga la foto*/
-	width: 50%;
-	height:50%;
-	float: center;
-	padding-left: 25%;
-}
-.conmutaciónImg{
-	font-size:10px;
-	color:#434343;
-}
-#TramasConmutacion:hover {
-	background: rgb(112 209 255);
-    color: #000000;
-	transform: scale(1.01); /*se pueden hacer desplazamientos  los lados, por si quereis cambiar esto*/
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
-}
-/*Los otros dos de abajo*/
-#TablaMAC:hover {
-	background: rgb(112 209 255 / 84%);
-    color: #000000;
-	transform: scale(1.01);
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
-}
-#VLANSEMPRESA:hover {
-	background: rgb(112 209 255);
-    color: #000000;
-   	transform: scale(1.01);
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
-	
-}
-/*----------------------------------------*/
 
-/*posiciones cambiables para todos*/
+.titulo {
+    text-align: center;
+    padding: 50px;
+    background-color: #121b2d;
+    color: #fff;
+}
 
-/*------------------HEADER----------------*/
-.titulo {/*Se puede poner sticky para dejar el nombre*/
-	/****position: fixed;
-	z-index: 9999;*****/
-	max-width: 95%;
-    margin: 0 auto;
-	z-index: 777777;
-	text-align: center;
-	top: 5px;
-	left: 2%;
-	height: 10%; 
-	width: 93%; 
-	border-radius: 20px; 
-	border-color: #654444;
+#definicion {
+    margin: 50px 200px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#definicion h2 {
+    color: #4338ca;
+    font-size: 2em;
+    border-bottom: 3px solid #4338ca;
+}
+
+#fotoSwitch {
+    text-align: center;
+    margin-bottom: 1.5rem;
     margin-top: 20px;
 }
-/*-----------------DEFINICIÓN y NAV-----------------*/
-#principio {
-	gap: 5%;
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-	top: 1em;
-	margin-bottom: 250px;
-}
-/*--------DEFINICION-------*/
-#definicion {
-    position: relative;
-    width: 50%;
-}
-#principio p, h2{
-		text-align: center;
-}
-#fotoSwitch {
-	float: center;
-	padding-left: 35%;
-}
+
 #mi_foto {
-	width: 50%;
-	height:50%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-/*------------------NAV----------------*/
-#articulos {
-   position: relative;
-   top: 57%;
-   width: 40%;
+
+#definicionSwitch {
+    font-size: 1.8em;
 }
+
 #articulos ul {
-    list-style-type: none;
-    margin: 1px;
     display: flex;
-    flex-direction: column;
-    gap: 20px; 
+    justify-content: center;
+    gap: 40px;
+    transition: all .7s ease-out;
 }
+
+#articulos li {
+    list-style: none;
+}
+
 #articulos a {
+
+    padding: 20px;
+    background-color: #000;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+#articulos li a:hover {
+    background-color: #121b2d;
+    color: #fff;
+}
+
+#articulos a {
+    color: #000;
+}
+
+#TramasConmutacion {
+    margin: 50px 200px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#Conmutacion {
+    color: #4338ca;
+    font-size: 2em;
+    border-bottom: 3px solid #4338ca;
+}
+
+#TramasConmutacion p {
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+.conmutaciónImg {
     display: block;
+    width: 100%;
     text-align: center;
-    text-decoration: none;
-    padding: 11px;
-    transition: 0.7s ease;
-    box-shadow: 4px 2px 5px rgb(0 0 0);
 }
-/*------Posicion de el contenido y las tablas de dentro---------*/
-#TramasConmutacion, #TablaMAC, #VLANSEMPRESA {
-	margin: 30px;
-    position: relative;
-    padding: 20px;
-    margin-bottom: 20px;
-	
-	display: block;
-    text-decoration: none;
-    padding: 11px;
-    transition: 0.7s ease;
+
+.switch-item {
+    height: 300px;
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-td:hover{/*Meramente decorativo para dar flasa sensacion de interactividad*/
-	background: #c9f0ff;
-	transition: 0.7s ease;
+
+.Funcionamiento {
+    color: #4338ca;
 }
-th{ 
-	background-color:#aeff8b;
+
+#TramasConmutacion ol li {
+    font-size: 1.6em;
+    margin: 30px 0;
+    list-style: inherit;
 }
+
+#TablaMAC {
+    margin: 50px 200px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#Tabla {
+    color: #4338ca;
+    font-size: 2em;
+    border-bottom: 3px solid #4338ca;
+}
+
 table {
-	width: 90%;
-	align-items: anchor-center;
+    width: 100%;
     border-collapse: collapse;
-    margin-top: 18px;
-    background: #ffffff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);;
 }
-th, td {
-    padding: 10px 12px;
-    border: 1px solid #000000;
+
+th {
+    background-color: #121b2d;
+    color: #fff;
+    padding: 1rem;
     text-align: left;
-    vertical-align: top;
-    font-size: 0.94rem;
+    font-weight: 600;
 }
-/*---FOOTER-----*/
-/*-----FOOTER-----*/
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
 }
-footer a {
-    text-decoration: none;
-    color: #3fb0e8;
-    font-size: 14px;
+
+#TablaMAC p{
+    margin-top: 30px;
+    font-size: 2em;
 }
-footer a:hover {
-    color: #1683ff;
+
+#TablaMAC ul li{
+    font-size: 1.6em;
+    margin: 30px 0;
+    list-style: initial;
 }
+
+#VLANSEMPRESA {
+    margin: 50px 200px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 50px;
+    background-color: #fff;
+}
+
+#VLANs {
+    color: #4338ca;
+    font-size: 2em;
+    border-bottom: 3px solid #4338ca;
+}
+
+h4{
+    margin: 10px;
+    color: #4338ca;
+    font-size: 1.8em;
+}
+
+#VLANSEMPRESA p{
+    font-size: 1.8em;
+}
+
+

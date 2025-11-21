@@ -161,15 +161,15 @@
                 </tr>
             </table>
             <p>Cuando un switch recibe una trama en un puerto:
+            Si no se detecta trafico en un puerto durante un tiempo, la entrada correspondiente en la tabla MAC puede
+            eliminarse para liberar espacio y mantener la tabla actualizada.
+            </p>
             <ul>
                 <li>Si la dirección está en la tabla MAC:
                     El switch envía la trama solo por el puerto asociado.</li>
                 <li>Si la dirección NO está en la tabla MAC:
                     El switch envía la trama a todos los puertos excepto el de origen.</li>
             </ul>
-            Si no se detecta trafico en un puerto durante un tiempo, la entrada correspondiente en la tabla MAC puede
-            eliminarse para liberar espacio y mantener la tabla actualizada.
-            </p>
         </section>
     </div>
 
@@ -220,7 +220,9 @@
     </div>
 
     <footer>
-        <a href="#inicio">RETURN</a>
+        <div class="texto">
+            <p>Todos Los Derechos al equipo Universitario compuesto Mujahid, Javier y Francisco &copy;</p>
+        </div>
     </footer>
     <script src="/Francisco/JS/headerJS.js"></script>
 </body>
