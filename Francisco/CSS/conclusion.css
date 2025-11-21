@@ -267,3 +267,8 @@ footer p {
     color: rgb(0, 0, 0);    
     border: 2px solid white;    
 }
+
+svg{
+    width: 200px;
+    height: 80px;
+}

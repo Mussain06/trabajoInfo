@@ -241,3 +241,8 @@ section li {
 .textGrafica{
     padding: 50px;
 }
+
+svg{
+    width: 200px;
+    height: 80px;
+}

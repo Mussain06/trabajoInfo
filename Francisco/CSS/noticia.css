@@ -258,5 +258,9 @@ h4:hover{
     font-size: 24px;
     transition: all 0.7s;
 } 
+svg{
+    width: 200px;
+    height: 80px;
+}   
 
 
