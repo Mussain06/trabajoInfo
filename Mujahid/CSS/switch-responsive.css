@@ -1,0 +1,38 @@
+@media (max-width: 1200px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .listaMenu{
+        flex-direction: column;
+    }
+
+    #articulos{
+        display: block;
+    }
+
+    #articulos ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .switch-item, #mi_foto{
+        width: 400px;
+    }
+
+    #TablaMAC, #VLANSEMPRESA, #TramasConmutacion, #definicion{
+        margin: 0 40px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    #TablaMAC, #VLANSEMPRESA, #TramasConmutacion, #definicion{
+        margin:0;
+    }
+
+
+}
+

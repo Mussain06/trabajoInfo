@@ -1,0 +1,46 @@
+@media (max-width: 1200px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .listaMenu{
+        flex-direction: column;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerInfo{
+        flex-direction: column;
+    }
+
+    .modelosTeoricos{
+        text-align: center;
+    }
+
+    .ConceptosAd{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .itemCapa{
+        min-width: 400px;
+    }
+
+    .grafica{
+        flex-direction: column;
+    }
+
+    .imgOrdenador{
+        width: 400px;
+    }
+
+}

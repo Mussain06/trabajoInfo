@@ -1,0 +1,52 @@
+@media (max-width: 1200px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .listaMenu{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .imagenPresentacion h1{
+        font-size: 5rem;
+    }
+
+    .imagenPresentacion{
+        position: relative;
+        z-index: -1;
+    }
+
+
+
+    #miembrosEquipo{
+        flex-direction: column;
+        height: 1400px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .imagenPresentacion h1{
+        font-size: 3rem;
+    }
+
+    .subtitulo{
+        text-align: center;
+    }
+
+    .imagenPresentacion{
+        position: relative;
+        z-index: -1;
+    }
+
+
+
+    #miembrosEquipo{
+        flex-direction: column;
+        height: 1400px;
+    }
+
+}

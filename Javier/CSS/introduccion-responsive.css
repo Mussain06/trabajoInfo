@@ -1,0 +1,38 @@
+@media (max-width: 1200px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listaMenu {
+        flex-direction: column;
+    }
+
+    .contenido {
+        grid-template-areas:
+            "intro"
+            "contexto"
+            "importancia"
+            "objetivo";
+    }
+
+}
+
+@media (max-width: 900px) {
+    #introduccion, #contexto, #importancia, #objetivo{
+        margin: 0;
+    }
+}
+
+@media (max-width: 740px) {
+    #objetivo{
+        max-width: 500px;
+        margin: auto;
+        padding:0;
+    }
+
+    #contexto{
+        min-width: inherit;
+    }
+
+}
