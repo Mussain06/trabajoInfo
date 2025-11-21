@@ -1,0 +1,22 @@
+@media (max-width: 1200px) {
+    .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .listaMenu{
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 770px) {
+    #articulos ul{
+        flex-direction: column;
+        margin: 0 40px;
+    }
+
+    #definicionModem, #ModemADSL, #ModemCableDOCSIS, #Fibraóptica, #ModemSatelital, #ModemMovil{
+        margin: 20px 40px;
+    }
+}
