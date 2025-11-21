@@ -1,9 +1,3 @@
-/*-----------------CABECERA, cambiar ridge o poner en sticky y cosas asi-----*/
-.titulo{ /*Que cada uno ponga sus coores y formas*/
-    background-color: rgb(255 255 255);
-    border-top: ridge 5px rgb(255 255 255 / 40%);
-    border-radius: 10px;
-}
 a{
     text-decoration: none;
     color: #3b3b3c;
@@ -93,197 +87,73 @@ footer{
     color: #fff;
 
 }
-
+body{
+    background: url("/Javier/Imagenes/fondomodem2.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+.titulo  {
+    max-width: 95%;
+    margin: 30px auto 10px;
+    padding: 20px;
+    color: red;
+    text-align: center;
+    border-radius: 18px;
+}
 .texto{
     padding: 30px;
     text-align  : center;
 }
-/*-------FONDO----------*/
-/*--------Solo es el fondo podeis poner imagenes o cambiarle colores*/
-body{/*posibilidad de poner una imagen de fondo, yo pondré un color*/
-	background-color: #a9ffb1;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+#articulos {
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-#definicion{ /*Apartado de fto y definición, se puede poner como body sin más, cambiar foto o colocar a la izq*/
-    font-size: 21px;
-	background: linear-gradient(rgb(193 255 172 / 80%), rgb(64 250 1 / 60%));
-    border-radius: 10px; 
-	border: 1px solid rgb(255 255 255 / 52%);
-	border-color: #000000ba;
-	box-shadow: 3px 4px 10px rgb(0 0 0 / 100%);
-}
-/*-----------NAV colores----------*/
-#articulos li a:hover {/*Cambiar collores y la sombra */
-    font-size:19px;
-	background: rgb(255 255 255);
-    color: #000000;
-    transform: translateY(-2px);
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 35%);
-}
-#articulos li a {/*Lo mismo que arriba*/
-	font-size:18px;
-	background: linear-gradient(rgb(193 255 172 / 80%), rgb(64 250 1 / 60%));
-    border-radius: 100px;
-	color: black;
-}
-/*Parte donde esta la teoria, lo mismo se puede displayear como columnas como en la galeria*/
-#TramasConmutacion, #TablaMAC, #VLANSEMPRESA{
-	font-size:24px;
-	background: #ffffff85;
-    border-radius: 10px; 
-    border: 1px solid rgb(255 255 255 / 50%);
-    border-color: #0000007d;
-	box-shadow: 3px 4px 10px rgb(0 0 0 / 65%);
-}
-.switch-item:hover{/*necesario ya que la foto contiene una URL, */
-	transition: 0.7s cubic-bezier(0.93, 0.1, 0, 0.86);
-	transform:scale(1.1);
-	filter: brightness(0.93);
-}
-.switch-item{ /*Necesaro para que no se salga la foto*/
-	width: 50%;
-	height:50%;
-	float: center;
-	padding-left: 25%;
-}
-.conmutaciónImg{
-	font-size:10px;
-	color:#434343;
-}
-#TramasConmutacion:hover {
-	background: rgb(112 209 255);
-    color: #000000;
-	transform: scale(1.01); /*se pueden hacer desplazamientos  los lados, por si quereis cambiar esto*/
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
-}
-/*Los otros dos de abajo*/
-#TablaMAC:hover {
-	background: rgb(112 209 255 / 84%);
-    color: #000000;
-	transform: scale(1.01);
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
-}
-#VLANSEMPRESA:hover {
-	background: rgb(112 209 255);
-    color: #000000;
-   	transform: scale(1.01);
-    box-shadow: 3px 4px 10px rgb(0 0 0 / 50%);
-	
-}
-/*----------------------------------------*/
 
-/*posiciones cambiables para todos*/
-
-/*------------------HEADER----------------*/
-.titulo {/*Se puede poner sticky para dejar el nombre*/
-	/****position: fixed;
-	z-index: 9999;*****/
-	max-width: 95%;
-    margin: 0 auto;
-	z-index: 777777;
-	text-align: center;
-	top: 5px;
-	left: 2%;
-	height: 10%; 
-	width: 93%; 
-	border-radius: 20px; 
-	border-color: #654444;
-    margin-top: 20px;
-}
-/*-----------------DEFINICIÓN y NAV-----------------*/
-#principio {
-	gap: 5%;
+#articulos ul {
     display: flex;
-    align-items: flex-start;
-    position: relative;
-	top: 1em;
-	margin-bottom: 250px;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
 }
-/*--------DEFINICION-------*/
-#definicion {
-    position: relative;
-    width: 50%;
+
+#articulos a {
+    color: white;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 10px;
 }
-#principio p, h2{
-		text-align: center;
+#articulos a:hover {
+    background: black;
+}
+section {
+    background: rgb(1, 255, 128);
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px black;
+}
+
+section h2, section h3, section h4 {
+    color: rgb(164, 9, 9);
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+    text-align: justify;
 }
 #fotoSwitch {
-	float: center;
-	padding-left: 35%;
-}
-#mi_foto {
-	width: 50%;
-	height:50%;
-}
-/*------------------NAV----------------*/
-#articulos {
-   position: relative;
-   top: 57%;
-   width: 40%;
-}
-#articulos ul {
-    list-style-type: none;
-    margin: 1px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
-}
-#articulos a {
-    display: block;
     text-align: center;
-    text-decoration: none;
-    padding: 11px;
-    transition: 0.7s ease;
-    box-shadow: 4px 2px 5px rgb(0 0 0);
+    margin-bottom: 25px;
 }
-/*------Posicion de el contenido y las tablas de dentro---------*/
-#TramasConmutacion, #TablaMAC, #VLANSEMPRESA {
-	margin: 30px;
-    position: relative;
-    padding: 20px;
-    margin-bottom: 20px;
-	
-	display: block;
-    text-decoration: none;
-    padding: 11px;
-    transition: 0.7s ease;
+
+#fotoSwitch img {
+    width: 280px;
+    border-radius: 15px;
+    border: 3px solid #1f6da0;
 }
-td:hover{/*Meramente decorativo para dar flasa sensacion de interactividad*/
-	background: #c9f0ff;
-	transition: 0.7s ease;
-}
-th{ 
-	background-color:#aeff8b;
-}
-table {
-	width: 90%;
-	align-items: anchor-center;
-    border-collapse: collapse;
-    margin-top: 18px;
-    background: #ffffff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-}
-th, td {
-    padding: 10px 12px;
-    border: 1px solid #000000;
-    text-align: left;
-    vertical-align: top;
-    font-size: 0.94rem;
-}
-/*---FOOTER-----*/
-/*-----FOOTER-----*/
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-footer a {
-    text-decoration: none;
-    color: #3fb0e8;
-    font-size: 14px;
-}
-footer a:hover {
-    color: #1683ff;
-}
+
