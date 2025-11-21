@@ -4,6 +4,10 @@ a{
     color: #3b3b3c;
 }
  
+svg{
+    width: 200px;
+    height: 80px;
+}
 .cabecera{
     position: sticky;
     top: 0;

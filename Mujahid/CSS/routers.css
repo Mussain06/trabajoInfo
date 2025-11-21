@@ -278,7 +278,37 @@ footer{
     text-align  : center;
 }
 
+.languages{
+    position: sticky;
+    bottom: 0px;                     
+    right: 20px;                
+    z-index: 3000;              
+    background: rgba(0, 0, 0, 0.01);
+    padding: 8px 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 8px;
+    font-family: 'Source Sans 3', sans-serif;
+}
 
+.languages button {
+    background: rgba(78, 82, 82, 0.655);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 44px;
+    font-size: 14px;
+}
+
+.languages button:hover {
+    background: rgb(141, 186, 190);
+    color: rgb(0, 0, 0);    
+    border: 2px solid white;    
+}
 
 
 
