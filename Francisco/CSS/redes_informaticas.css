@@ -11,7 +11,7 @@ a{
     text-decoration: none;
     color: #3b3b3c;
 }
-
+ 
 p{
     font-size: 1.5rem;
 }
@@ -61,16 +61,54 @@ p{
 }
 
 
+
 body{
     background-color: #fafaf9;
 }
 
-h1{
-    color: #4338ca;
+h1, 
+h2, 
+h3, 
+h4 {
+    color: #d14f86;              
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-h2{
-    color: #4338ca;
+section {
+    margin: 40px auto;
+    background: #fff0f7;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #ffcce6;     /* borde rosa suave */
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+}
+.itemCapa, .itemInfo, .itemDirect {
+    background: white;
+    border: 1px solid #ffb3d9;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: 0.6s;
+}
+
+.itemCapa:hover,
+.itemInfo:hover,
+.itemDirect:hover {
+    background: #ffe6f2;
+    border-color: #ff80bf;
+}
+
+.buttonModel {
+    padding: 10px 20px;
+    background: #ff99cc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .textoInicio{
@@ -91,13 +129,13 @@ h2{
 }
 
 .active{
-    background-color: #4338ca;
-    color: #fff;
+    background-color: #f9f9f9;
+    color: #f200ff;
 }
 
 .desactive{
     background-color: rgb(224 231 255);
-    color: #4338ca;
+    color: #555555;
 }
 
 .buttonContainer{
@@ -129,24 +167,6 @@ h2{
     color: #44403c
 }
 
-.itemCapa{
-    background-color: #e0e7ff;
-    margin: 10px 30px;
-    font-weight: bolder;
-    border-radius: 8px;
-    padding: 15px 0;
-    font-size: 0.9em;
-    text-align: center;
-    color: #4338ca;
-    border: 1px solid rgb(99 102 241);
-    transition: all .2s ease-out;
-    min-width: 800px;
-}
-
-.itemCapa:hover{
-    background-color:  #92acffe1;
-    transform: scale(1.06);
-}
 
 
 .cajaInfo{
@@ -162,12 +182,12 @@ h2{
 
 .tituloCapa, .subtitulo{
     padding:  10px 20px;
-    color: #4338ca;
+    color: #ff00f7;
 }
 
-.containerInfo{
-    display: flex;
-    justify-content: space-between;
+.containerInfo {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .smallText {
@@ -175,11 +195,12 @@ h2{
 }
 
 .itemInfo{
-    margin: 20px;
-    box-shadow: -2px -2px 38px -8px rgba(0,0,0,0.45);
-    border-radius: 9px;
-    margin-top: 30px;
-    padding: 10px;
+    background-color: #ffe6f2; /* rosa pastel */
+    border: 1px solid #ffb3d9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
     text-align: center;
 }
 
@@ -273,37 +294,6 @@ footer{
 
 .spanAfter a{
     color: #fff;
-}
-.languages{
-    position: sticky;
-    bottom: 0px;                     
-    right: 20px;                
-    z-index: 3000;              
-    background: rgba(0, 0, 0, 0.01);
-    padding: 8px 12px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
-    display: flex;
-    gap: 8px;
-    font-family: 'Source Sans 3', sans-serif;
-}
-
-.languages button {
-    background: rgba(78, 82, 82, 0.655);
-    color: rgb(0, 0, 0);
-    border: 2px solid white;
-    padding: 8px 16px;
-    border-radius: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    min-width: 44px;
-    font-size: 14px;
-}
-
-.languages button:hover {
-    background: rgb(141, 186, 190);
-    color: rgb(0, 0, 0);    
-    border: 2px solid white;    
 }
 
 

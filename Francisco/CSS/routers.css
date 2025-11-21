@@ -9,16 +9,27 @@
 /*CSS DE LA PÁGINA*/
 
 .tituloPrinc{
+    text-align: center;
+    display: block;
+    border: solid #ff000054 4px;
+    border-end-end-radius: calc(20px + 1em);
+    border-bottom-left-radius: calc(20px + 1em);
     font-size: 3.3em;
     margin: 30px 0 0 30px;
-    color: #4338ca;
+    color: #000000;
 }
 
 .subtitulo{
+    display: block;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.904);
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
     margin-top: 20px;
     font-size: 1.3em;
     margin-left: 60px;
-    color: #3b3b3c;
+    color: #410e0e;
 }
 
 .defin{
@@ -34,12 +45,18 @@
 }
 
 .textoContainer{
+    display: block;
+    border: 2px solid #000000;
     max-width: 900px;
     margin-top: 30px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    background-color: #ffffffd6;
 }
 
 .titDef{
-    color: #4338ca;
+    display: block;
+    color: #ff0000;
     font-size: 1.5em;
     margin: 20px 0;
 }
@@ -49,30 +66,45 @@
     bottom: 48px;
     right: 118px;
 }
+.imgGif:hover{
+    transform: rotate(360deg);
+    transition: all 0.7s ease-in-out;
+}
 
 .cajadef{
-    color: #1e3a8a;
-    background-color: #eff6ff;
+    display: block;
+    border: 2px solid #ff4e4e;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #000000;
+    background-color: #f5aaeb;
     margin:  0 30px;
-    border-left: 7px solid #1e3a8a;
+    border-left: 7px solid #ff0404;
 }
 
 .cajadef h4{
+    color: #000000;
     padding: 20px;
     font-size: 1.3em;
 }
 
 .cajadef ul{
+    color: #000000d6;
    padding-left: 50px;
 }
 
+main{
+
+    background-color: #ffe1f88e;
+}
 .itemDef{
     padding: 20px;
 }
 
 .titEjem{
-    color: #4338ca;
+    color: #ff0000;
     margin: 20px 30px;
+    border-bottom: ridge rgba(255, 0, 0, 0.8) 1mm
 }
 
 .textEjem{
@@ -83,9 +115,11 @@
 }
 
 .ilustaciones{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    gap: 20px;                
+    padding: 20px;
     justify-content: space-around;
-    gap: 20px;
 }
 
 
@@ -99,20 +133,33 @@
 }
 
 .itemIlus{
-    border: #4338ca 3px dotted;
+    border: #ff4ec4 3px solid;
     padding: 40px;
     text-align: center;
     margin: 30px 0;
+    border-radius: 20px;
+    color:#3a3a3b;
 }
 
+.itemIlus:hover{
+    border: #000000 3px solid;
+    background-color: #fff;
+    padding: 40px;
+    color:#000000;
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 20px;
+}
+
+
 .active{
-    background-color: #4338ca;
+    background-color: #ff0000;
     color: #fff;
 }
 
 .desactive{
     background-color: rgb(224 231 255);
-    color: #4338ca;
+    color: #3a3a3b;
 }
 
 .buttonContainer{
@@ -129,6 +176,11 @@
     padding: 15px;
 }
 
+.buttonModel:not(.active):hover{
+color: rgb(255, 255, 255);
+background-color: #3b3b3c;
+}
+
 
 .tipoRouters{
     margin: 40px;
@@ -136,8 +188,10 @@
 }
 
 .titRouter{
-    color: #4338ca;
+    text-align: center;
+    color: #d80000;
     margin-bottom: 20px;
+    border-bottom: ridge rgba(255, 0, 0, 0.8) 1mm
 }
 
 /*CSS para Caja Información (NO TOCAR)*/

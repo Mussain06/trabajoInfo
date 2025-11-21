@@ -1,7 +1,9 @@
 /*-----------------CABECERA, cambiar ridge o poner en sticky y cosas asi-----*/
 .titulo{ /*Que cada uno ponga sus coores y formas*/
     background-color: rgb(255 255 255);
-    border-top: ridge 5px rgb(255 255 255 / 40%);
+    border-left: ridge 2px rgb(255 255 255 / 40%);
+    border-bottom: ridge 2px rgb(255 255 255 / 40%);
+    border-right: ridge 2px rgb(255 255 255 / 40%);
     border-radius: 10px;
 }
 a{

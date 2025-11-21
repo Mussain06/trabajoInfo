@@ -141,6 +141,14 @@ body {
     transform: translateY(-2px);
 }
 
+#introduccion {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 20px 0;
+    padding: 0 15px;
+    color: #555;
+    background-color: rgba(255, 192, 203, 0.803);
+}
 
 .lineaBottom::after {
     content: "";
@@ -155,29 +163,48 @@ body {
 .listaMenu li:hover .lineaBottom::after {
     width: 100%;
 }
+body {
+
+    background-color: #7959594a;
+}
 
 h1, h2, h3, h4 {
-    color: #af1c2e;
+    text-align: center;
+    diplay: block;
+    color: #ffffff;
     margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 10px;
+    background-color: pink;
+    border-radius: 10px;
 }
 
 p {
+    display: block;
+    padding-bottom: 30px;
+    display: block;
     line-height: 1.65;
     padding: 15px 25px;
     padding-left: 15px;
-    background: #ffffff;
+    background: #5c000034;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 footer {
-    background-color: #af1c2e;
+    border-top-left-radius: 100px;
+    display: block;
+    border-bottom-right-radius: 100px ;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #ffdca9;
     color: #ffffff;
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
+    max-width: 80%;
+    left:5%;
+    right:auto;
 }
 
 footer p {
@@ -190,36 +217,46 @@ footer p {
 	width: 11%;
 	border: solid;
 }
-.languages{
-    position: sticky;
-    bottom: 0px;                     
-    right: 20px;                
-    z-index: 3000;              
-    background: rgba(0, 0, 0, 0.01);
-    padding: 8px 12px;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
-    display: flex;
-    gap: 8px;
-    font-family: 'Source Sans 3', sans-serif;
-}
+h1:hover{
+    transform: rotate(1deg);
+    padding: 20px 40px;
+    background: white;
+    color:black; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    font-size: 24px;
+    transition: all 0.7s;
+} 
+h2:hover{
+    transform: rotate(1deg);
+    padding: 20px 40px;
+    background: white;
+    color:black; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    font-size: 24px;
+    transition: all 0.7s;
+} 
+h3:hover{
+    transform: rotate(1deg);
+    padding: 20px 40px;
+    background: white;
+    color:black; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    font-size: 24px;
+    transition: all 0.7s;
 
-.languages button {
-    background: rgba(78, 82, 82, 0.655);
-    color: rgb(0, 0, 0);
-    border: 2px solid white;
-    padding: 8px 16px;
-    border-radius: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    min-width: 44px;
-    font-size: 14px;
-}
-
-.languages button:hover {
-    background: rgb(141, 186, 190);
-    color: rgb(0, 0, 0);    
-    border: 2px solid white;    
-}
+}  
+h4:hover{
+    transform: rotate(0.1deg);
+    padding: 20px 40px;
+    background: white;
+    color:black; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    font-size: 24px;
+    transition: all 0.7s;
+} 
 
 

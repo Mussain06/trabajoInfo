@@ -3,13 +3,59 @@ a{
     text-decoration: none;
     color: #3b3b3c;
 }
-
+ 
 .cabecera{
     position: sticky;
     top: 0;
     z-index: 200;
 }
 
+.título{
+    background-color: #5d6987;
+    text-align: center;
+    font-size: 2rem rgb(90, 90, 90);
+    font-weight: 600;
+    padding: 20px;
+    color: #000000;
+    border-end-end-radius: calc(20px + 1em);
+    border-end-start-radius: calc(20px + 1em);
+    border-start-start-radius: calc(20px + 1em);
+    border-start-end-radius: calc(20px + 1em);
+    border-bottom: ridge #ffffff 1mm;
+    border-top: ridge #ffffff 1mm;
+}
+.título:hover{
+    transform: scale(1.02);
+    transition: all 1s ease;
+}
+#conclusion{
+    display: block;
+      position: relative;
+    background-color: rgb(100, 100, 102);
+    border-radius: 20px solid #000000 4px;
+    text-align: left;
+    line-height: 1.6;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    border: #000000 3px solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: #0f0e0e;
+}
+#conclusion::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 4px;
+    background: #3a3a3a71;
+    transition: width 0.4s ease;
+}
+#conclusion:hover::after {
+    width: 100%;
+}
 .menu{
     display: flex;
     justify-content: space-evenly;
@@ -170,17 +216,17 @@ p {
 
 
 footer {
-    background-color: #af1c2e;
+    background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 15px 0;
-    margin-top: 40px;
+    margin-top: 71px;
 }
 
 footer p {
     margin: 0;
     font-weight: 600;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 #mi_foto{
 	float: right;
