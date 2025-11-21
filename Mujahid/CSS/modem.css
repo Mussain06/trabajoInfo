@@ -1,62 +1,9 @@
-/*-----------Body---------------*/
-body {
-    background-color: #ffcceeb8;
-    font-family: 'Arial', sans-serif;
-    color:black;
-}
-/*-----HEADER------*/
-.tituloPrincipal {
-    /*color y borde*/
-    background: #fbafff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgb(255 255 255 / 22%);
-    text-align: center;
-    /*evita el desborde al hacer pequeña la pantalla, no lo quiteis*/
-    max-width: 95%;
-    margin: 30px auto 10px;
-    padding: 20px;
-}
-.tituloPrincipal h1 {
-    margin: 0;
-    font-size: 32px;
-    color: #000000;
-}
-/*------NAV--------*/
-#articulos {
-    /**posicionamiento y algun color*/
-    top: 1px;
-    background: white;
-    max-width: 95%;
-    margin: 0 auto;
-    /*En la primerisima capa, si le quitais el sticky no es necesario*/
-    z-index: 1000;
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 1px 6px rgb(255 255 255 / 10%);
-}
-#articulos ul {
-    /*Puse los links de manera similar a la galeria que hicimos, que no se pierda texto si menguamos pantalla*/
-    list-style: none;
-    margin: 0;
+*{
     padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-#articulos a {
-    /*Como se veran los enlaces interactivos de arriba*/
-    display: block;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    transition: 0.6s cubic-bezier(0.2, 0.83, 1, 0.66);
-    background: #f8f8f8;
-}
-#articulos a:hover {
-    background: #f9adfd;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -154,68 +101,6 @@ footer{
     text-align  : center;
 }
 
-/*-----------DEFINICION---------------*/
-#definicionModem {
-    max-width: 95%;
-    margin: 30px auto;
-    padding: 45px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgb(255 255 255 / 7%);
-}
-/*imagen dentro del cuadro*/
-#fotoModem {/*la foto no se como ponerla para que no moleste*/
-    float: right;
-    width: 30%;
-    text-align: center;
-    top:40%auto;
-}
-#mi_foto {
-    max-width: 40%;
-    border-radius: 10px;
-}
-/*---------------CONTENIDO------------*/
-.tiposModem{
-    max-width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 3fr));
-    gap:0px;
-    padding-bottom: 40px;
-}
-.tiposModem div{
-    background: white;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: 0.5s cubic-bezier(1, 0.7, 0.25, 1);
-    border-left: 4px solid #8b5ed3;
-}
-.tiposModem div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-}
-/*-------TITULOS-------*/
-.tiposModem h4 {
-    color: #444;
-}
-/*------PARRAFO, interlineado y tamaño------*/
-.tiposModem p {
-    line-height: 1.6;
-    font-size: 15px;
-}
-/*-----FOOTER-----*/
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-footer a {
-    text-decoration: none;
-    color: #666;
-    font-size: 14px;
-}
-footer a:hover {
-    color: #333;
-}
+
+
+

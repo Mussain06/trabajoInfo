@@ -1,22 +1,21 @@
-
-a{
+a {
     text-decoration: none;
     color: #3b3b3c;
 }
 
-.cabecera{
+.cabecera {
     position: sticky;
     top: 0;
     z-index: 200;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-evenly;
     background-color: #faf9f8;
 }
 
-.listaMenu{
+.listaMenu {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -28,13 +27,13 @@ a{
     color: #3b3b3c;
 }
 
-.listaMenu li{
+.listaMenu li {
     position: relative;
     padding: 10px 0px;
     cursor: pointer;
 }
 
-.lineaBottom::after{
+.lineaBottom::after {
     content: "";
     left: 0;
     width: 0;
@@ -43,17 +42,17 @@ a{
     position: absolute;
     background: #c78b86;
     transition: width .28s ease-in-out
-    
 }
 
-.lineaBottom:hover::after{
+.lineaBottom:hover::after {
     width: 100%;
 }
 
 
-.spanAfter{
+.spanAfter {
     position: absolute;
-    background-color: #08A3BF;;
+    background-color: #08A3BF;
+    ;
     left: -50px;
     top: 60px;
     width: 250px;
@@ -68,7 +67,7 @@ a{
 
 
 
-.spanAfter::after{
+.spanAfter::after {
     content: "";
     position: absolute;
     top: -18px;
@@ -79,123 +78,68 @@ a{
     border-bottom: 20px solid #08A3BF;
 }
 
-.spanAfter a{
+.spanAfter a {
     color: #fff;
 }
 
-footer{
+footer {
     background-color: #000;
     color: #fff;
 
 }
 
-.texto{
+.texto {
     padding: 30px;
-    text-align  : center;
+    text-align: center;
 }
 
-
-body {
-    margin: 0;
-    font-family: "Source Sans 3", sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
+#introduccion {
+    color: red;
+    font-size: 1.8em;
+    grid-area: intro;
 }
-
-
-.cabecera {
-    width: 100%;
-    background-color: #ffffff;
-    border-bottom: 2px solid #af1c2e;
-    position: sticky;
-    top: 0;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    padding: 10px 25px;
-}
-
-
-.listaMenu {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    padding: 0;
-    margin: 0;
-}
-
-.listaMenu li {
-    font-weight: 600;
-    position: relative;
-}
-
-.lineaBottom span {
-    padding-bottom: 5px;
-    transition: color 0.3s ease;
-}
-
-.listaMenu li:hover span {
-    color: #af1c2e;
-}
-
-.listaMenu li:hover .lineaBottom::after {
-    width: 100%;
-}
-
-
-.lineaBottom::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    background-color: #af1c2e;
-    transition: width 0.3s ease;
-    margin-top: 4px;
-}
-
 
 .contenido {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+    display: grid;
+    max-width: 100%;
+    gap: 1.7rem;
+    grid-template-areas: 
+    "intro intro"
+    "contexto importancia"
+    "objetivo objetivo";
 }
-
-.texto {
-
-    padding: 20px 25px;
-    margin-bottom: 25px;
-    border-radius: 10px;
+#contexto{
+    grid-area: contexto;
+    min-width: 650px;
+    border-left: 8px solid red;
+    margin-left: 40px;
 
 }
+#importancia{
+    grid-area: importancia;
+    border-left: 8px solid red;
 
-h2, h3 {
-    color: #0f0e0e;
-    margin-top: 0;
 }
-
-p {
-    line-height: 1.6;
+#objetivo{
+    grid-area: objetivo;
+    background-color: red;
+    margin: 10px 40px;
+    border-radius: 18px;
+    color: white;
+    font-size: 1.4em;
 }
-
-
-footer {
-    background-color: #af1c2e;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
+#contexto h2{
+    text-align: left;
 }
-
-footer p {
-    margin: 0;
-    font-weight: 600;
-    color: black;
+#contexto p{
+    text-align: left;
 }
-#mi_foto{
-	float: right;
-	width: 11%;
-	border: solid;
+#importancia h2{
+    text-align: left;
 }
-
+#importancia p{
+    text-align: left;
+}
+#objetivo h2{
+    border-bottom: 2px solid white;
+}

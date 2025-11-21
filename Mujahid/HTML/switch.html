@@ -93,7 +93,7 @@
                 dirección MAC destino y decide si enviarla o no a los distintos puertos utilizando las direcciones MAC.
                 Aun así, también se pueden configurar. </p>
             <a href="https://miro.com/welcomeonboard/MHdydytVSlc4YzUzL2d2dVB4YVV1S3ZBSjZuNC9leks4M3ZQdWM5a2V6UGFqMk9FWkNPSWxqUDVDZjJmaWlvZXdsVUdFN0dFTVczME9LYkIrakh0OUh5b1lCeEhvdFhCN0xjaW5NZHk3NmRGaGYvdDZnSndaK2p1R2ZDYzBPV1ZBd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=987528187952"
-                class="conmutaciónImg"><img class="switch-item" src="conmutacion.jpg" alt="Foto Conmutación">CLICK</a>
+                class="conmutaciónImg"><img class="switch-item" src="/Mujahid/Imagenes/conmutacion.jpg" alt="Foto Conmutación"></a>
             <nav id="Funcionamiento">
                 <p class="Funcionamiento">Funcionamiento General</p>
                 <ol>
@@ -160,15 +160,15 @@
                 </tr>
             </table>
             <p>Cuando un switch recibe una trama en un puerto:
+            Si no se detecta trafico en un puerto durante un tiempo, la entrada correspondiente en la tabla MAC puede
+            eliminarse para liberar espacio y mantener la tabla actualizada.
+            </p>
             <ul>
                 <li>Si la dirección está en la tabla MAC:
                     El switch envía la trama solo por el puerto asociado.</li>
                 <li>Si la dirección NO está en la tabla MAC:
                     El switch envía la trama a todos los puertos excepto el de origen.</li>
             </ul>
-            Si no se detecta trafico en un puerto durante un tiempo, la entrada correspondiente en la tabla MAC puede
-            eliminarse para liberar espacio y mantener la tabla actualizada.
-            </p>
         </section>
     </div>
 
@@ -219,7 +219,9 @@
     </div>
 
     <footer>
-        <a href="#inicio">RETURN</a>
+        <div class="texto">
+            <p>Todos Los Derechos al equipo Universitario compuesto Mujahid, Javier y Francisco &copy;</p>
+        </div>
     </footer>
     <script src="/Mujahid/JS/headerJS.js"></script>
 </body>
