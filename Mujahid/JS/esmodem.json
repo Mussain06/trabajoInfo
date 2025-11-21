@@ -1,0 +1,51 @@
+{
+  "header": {
+    "home": "Inicio",
+    "introduction": "Introducción",
+    "theoreticalFundaments": "Fundamentos Teóricos",
+    "networkHardware": "Hardware de redes",
+    "news": "Noticias",
+    "conclusion": "Conclusión"
+  },
+  "main": {
+    "optica": "Fibra Óptica",
+    "satelitals": "Satelital",
+    "movilt": "Móvil",
+
+    "modemq": "¿Qué es un módem?",
+    "modemText": "Un módem (modulador-demodulador) es un dispositivo que permite la conexión a Internet al convertir las señales digitales de una computadora en señales analógicas que pueden ser transmitidas a través de líneas telefónicas, cables coaxiales o señales inalámbricas, y viceversa.",
+
+    "ADSL": "Módem ADSL",
+    "ADSLq": "¿Que es un módem ADSL/xDSL?",
+    "ADSLtext":"El módem ADSL (Asymmetric Digital Subscriber Line) es un tipo de módem que utiliza el par de cobre de la línea telefónica tradicional para proporcionar conexión a Internet. Permite transmitir datos y voz en el mismo cable gracias a la separación de frecuencias.",
+    "functionADSL": "Funcionamiento del módem ADSL/xDSL",
+    "functionADSLtext": "El módem ADSL modula la señal digital para enviarla como señales analógicas de alta frecuencia por el par de cobre. En la central telefónica, el DSLAM demodula esa señal y la conecta a Internet.",
+    
+    "cable": "Módem de cable",
+    "cableq": "¿Qué es un cable módem?",
+    "cableText": "Un cable módem es un dispositivo que permite la conexión a Internet a través de la infraestructura de televisión por cable. Utiliza el cable coaxial para transmitir datos a alta velocidad, proporcionando una conexión rápida y estable.",
+    "functioncable": "Funcionamiento del cable módem",
+    "functioncableText": "El cable módem modula las señales digitales en frecuencias adecuadas para su transmisión por el cable coaxial. En el proveedor de servicios de cable, un CMTS demodula la señal y la conecta a Internet.",
+
+    "optic": "Fibra óptica",
+    "opticq": "¿Qué es un módem de fibra óptica?",
+    "opticText": "Un módem de fibra óptica es un dispositivo que permite la conexión a Internet utilizando cables de fibra óptica. Estos cables transmiten datos mediante pulsos de luz, lo que permite velocidades de transmisión mucho más altas y una mayor capacidad en comparación con los módems tradicionales.",
+    "functionoptic": "Funcionamiento del módem de fibra óptica",
+    "functionopticText": "El módem de fibra óptica convierte las señales digitales en pulsos de luz para su transmisión a través del cable de fibra óptica. En el proveedor de servicios, un OLT demodula la señal de luz y la conecta a Internet.",
+  
+    "satelital": "Módem satelital",
+    "satelitalq": "¿Qué es un módem satelital?",
+    "satelitalText": "Un módem satelital es un dispositivo que permite la conexión a Internet a través de satélites en órbita. Es especialmente útil en áreas rurales o remotas donde no hay acceso a otras formas de conexión a Internet.",
+    "functionsatelital": "Funcionamiento del módem satelital",
+    "functionsatelitalText": "El módem satelital modula las señales digitales para enviarlas a un satélite en órbita, que luego las retransmite a una estación terrestre conectada a Internet. La señal de retorno sigue el mismo proceso inverso.",  
+
+    "movil": "Módem móvil",
+    "movilq": "¿Qué es un módem móvil?",  
+    "movilText": "Un módem móvil es un dispositivo que permite la conexión a Internet utilizando redes celulares (3G, 4G, 5G). Estos módems pueden ser dispositivos independientes o integrados en teléfonos inteligentes, tabletas o computadoras portátiles.",
+    "functionmovil": "Funcionamiento del módem móvil",
+    "functionmovilText": "El módem móvil se conecta a la red celular mediante una tarjeta SIM y utiliza las torres de telefonía móvil para transmitir y recibir datos, proporcionando acceso a Internet en movimiento."
+  },
+  "footer": {
+    "Rights": "Todos Los Derechos al equipo Universitario compuesto por Mujahid, Javier y Francisco &copy;"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "header": {
+    "home": "Home",
+    "introduction": "Introduction",
+    "theoreticalFundaments": "Theoretical Fundaments",
+    "networkHardware": "Network Hardware",
+    "news": "News",
+    "conclusion": "Conclusion"
+  },
+  "main": {
+    "intro": "Introduction",
+    "context": "General context",
+    "definition": "A computer network is a set of interconnected devices that share resources, information and services through some transmission medium. Its purpose is to facilitate communication and the sharing of resources such as files, data, internet access, hardware, applications, and services. Its basic elements are end devices, network devices, transmission media, and protocols.",
+    "importance": "Importance of hardware devices",
+    "texto": " These are the physical components that establish and manage communication between different devices on a network. Their importance lies in the fact that they allow devices to share information or resources, transmit data between nodes via physical or wireless means, direct and manage network traffic by selecting the most efficient route, ensure security by maintaining confidentiality, and improve performance by providing greater speed and stability. They also enable network expansion.",
+    "laMeta": "General goal",
+    "meta": "The main goal of this project is analize the computer networks,especially in one of its most important elements: hardware devices  "
+
+  },
+  "footer": {
+    "Rights": "All Rights Reserved to the University Team composed of Mujahid, Javier and Francisco &copy;"
+  }
+}

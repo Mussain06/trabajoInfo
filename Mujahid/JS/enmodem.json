@@ -1,0 +1,51 @@
+{
+  "header": {
+    "home": "Home",
+    "introduction": "Introduction",
+    "theoreticalFundaments": "Theoretical Fundaments",
+    "networkHardware": "Network Hardware",
+    "news": "News",
+    "conclusion": "Conclusion"
+  },
+  "main": {
+    "optica": "Fiber Optic",
+    "satelitals": "Satelital",
+    "movilt": "Mobile",
+
+    "modemq": "What is a modem?",
+    "modemText": "A modem (modulator-demodulator) is a device that enables Internet connection by converting digital signals from a computer into analog signals that can be transmitted over telephone lines, coaxial cables, or wireless signals, and vice versa.",
+    
+    "ADSL": "Modem ADSL",
+    "ADSLq": "What is an ADSL/xDSL modem?",
+    "ADSLtext": "An ADSL/xDSL modem is a device that allows high-speed Internet access over traditional telephone lines using Asymmetric Digital Subscriber Line (ADSL) technology. It enables simultaneous voice and data transmission by separating the frequency bands used for each service.",
+    "functionADSL": "Functioning of the ADSL/xDSL modem",
+    "functionADSLtext": "The ADSL modem modulates the digital signal to send it as high-frequency analog signals over the copper pair. At the telephone exchange, the DSLAM demodulates that signal and connects it to the Internet.",
+    
+    "cable": "Cable Modem",
+    "cableq":  "What is a cable modem?",
+    "cableText": "A cable modem is a device that enables Internet connection through the cable television infrastructure. It uses coaxial cable to transmit data at high speeds, providing a fast and stable connection.",
+    "functioncable": "Functioning of the cable modem",
+    "functioncableText": "The cable modem modulates digital signals into radio frequency signals that can be transmitted over the cable TV network. At the cable provider's headend, these signals are demodulated and routed to the Internet.",
+    
+    "optic": "Fiber Optic Modem",
+    "opticq": "What is a fiber optic modem?",
+    "opticText": "A fiber optic modem, also known as an Optical Network Terminal (ONT), is a device that converts optical signals transmitted through fiber optic cables into electrical signals that can be used by computers and other devices. It enables high-speed Internet access with low latency.",
+    "functionoptic": "Functioning of the fiber optic modem",
+    "functionopticText": "The fiber optic modem receives optical signals from the fiber optic network and converts them into electrical signals for use by connected devices. It also converts outgoing electrical signals into optical signals for transmission back to the network.",
+    
+    "satelital": "Satelital Modem",
+    "satelitalq": "What is a satellite modem?",
+    "satelitalText": "A satellite modem is a device that enables Internet connection via satellite communication. It modulates and demodulates signals to facilitate data transmission between a user's location and a satellite in orbit, allowing for connectivity in remote areas.",
+    "functionsatelital": "Functioning of the satellite modem",
+    "functionsatelitalText": "The satellite modem modulates digital signals into radio frequency signals for transmission to a satellite. The satellite then relays these signals back to Earth, where they are demodulated by another satellite modem connected to the Internet.",
+    
+    "movil": "Mobile Modem",
+    "movilq": "What is a mobile modem?",
+    "movilText": "A mobile modem is a device that provides Internet connectivity using cellular networks. It can be a standalone device or integrated into smartphones, tablets, or laptops, allowing users to access the Internet on the go via 3G, 4G, or 5G networks.",
+    "functionmovil": "Functioning of the mobile modem",
+    "functionmovilText": "The mobile modem connects to the cellular network using a SIM card and communicates with nearby cell towers to send and receive data, providing Internet access while on the move."
+  },
+  "footer": {
+    "Rights": "All Rights Reserved to the University Team composed of Mujahid, Javier and Francisco &copy;"
+  }
+}

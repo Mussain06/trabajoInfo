@@ -1,0 +1,63 @@
+{
+  "header": {
+    "home": "Home",
+    "introduction": "Introduction",
+    "theoreticalFundaments": "Theoretical Fundaments",
+    "networkHardware": "Network Hardware",
+    "news": "News",
+    "conclusion": "Conclusion"
+  },
+  "main": {
+    "title": "Switches (Business)",
+    "question": "Network Segmentation with VLANs",
+    "definition": "A switch is a device that connects devices within a local area network (LAN) and sends data only to the correct recipient. It operates at the data link layer (Layer 2) by linking data between interconnected devices on the same local network. In business environments, switches are essential because they manage large volumes of traffic, offer advanced features such as network segmentation (VLAN), traffic prioritization (QoS), and port-level security.",
+    "tramas":"Frame switching within a local network",
+    "MAC":"MAC Table and Switching Process",
+    "VLAN":"VLANs and Network Segmentation",
+    
+    "conmutacionTramas":"Frame switching within a local network",
+    "defTramas": "Switches use frame switching to send data within a local network. When a device sends data, the switch receives the frame and reads the destination MAC address. It then consults its MAC table to determine which port the destination device is connected to and sends the frame only to that port. This reduces unnecessary traffic on the network and improves performance.",
+    "funTramas":"General Operation",
+    "uno":"A device (A) sends a frame to another device (B).",
+    "dos":"The switch receives the frame on a port.",
+    "tres":"It consults its MAC address table.",
+    "cuatro":"If it doesn't know it, it sends the frame out all ports except the source port (flooding), and learns B's MAC.",
+    
+    "tablaMAC":"MAC Table and Switching Process",
+    "defMAC":"The MAC table is an internal memory of the switch that associates MAC addresses with physical po MAC addresses are pre-defined in the devices, as these devices connect to the switch and each MAC address is associated with a port. There are two ways for this to happen: the first is to leave the MAC table untouched, in which case the previously explained flooding (necessary) will occur, and all MAC addresses will be learned, starting with the first one, the one sending the data, and so on with the others connected to the same switch. Once learned, a distinction will be made and these addresses will be dynamic with an expiration time of no more than 10 minutes. The other way is to configure the MAC table oneself, in which case the entry will be static, useful for devices that are not in constant data traffic.",
+    "MACdire":"MAC Addresses",
+    "MACport":"Associated Ports",
+    "MACport1":"Port 1",
+    "MACport2":"Port 2",
+    "MACport3":"Port 3",
+    "MACport4":"Port 4",
+    "MACport5":"Port 5",
+    "MACtype":"Entry Type",
+    "MACdevice":"Device",
+    "MACdevice1":"Main Server",
+    "MACdevice2":"Computer 1",
+    "MACdevice3":"Computer 2",
+    "MACdevice4":"Printer 1",
+    "MACdevice5":"Printer 2",
+    "static":"Static",
+    "dynamic":"Dynamic",
+    "aclaracion": "When a switch receives a frame on a port: <br> If the address is in the MAC table     The switch sends the frame only through the associated port If the address is NOT in the MAC table     The switch sends the frame to all ports except the source port <br If no traffic is detected on a port for a certain time, the corresponding entry in the MAC table ma be removed to free up space and keep the table updated.",
+    "queVLAN":"What are VLANs?",
+    "defVLAN":"They allow dividing a physical network into several independent logical networks, even if the dev connected to the same physical switch. Each VLAN operates as if it were a separate network, which i security and improves traffic management. A company can separate an 8-port switch into or any other configuration into VLANs to prevent communication between, for example, floors; r connected to different VLANs through a router can communicate with each other.",
+    "funVLAN":"How does network segmentation work?",
+    "funVLANtext":"Each port of the switch is assigned to a specific VLAN. Devices connected to ports in the same VLAN can communicate directly with each other, while communication between different VLANs requires a router or a Layer 3 switch. This improves security by limiting access between network segments and reduces unnecessary traffic by confining communication within each VLAN.",
+    "redCorpo":"Corporate Network",
+    "egRed":"An example in a corporate network: <br> Imagine that in a company you have 3 departments. Administration, Sales, and Technical Support",
+    "lugar1": "Department",
+    "lugar2": "Administration",
+    "lugar3": "Sales",
+    "lugar4": "Technical Support",
+    "IP": "IP Range",
+    "permisos": "Restrictions",
+    "permisos1": "Isolated",
+    "permisos2": "No access restrictions"
+  },
+  "footer": {
+    "Rights": "All Rights Reserved to the University Team composed of Mujahid, Javier and Francisco &copy;"
+  }
+}

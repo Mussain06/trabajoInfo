@@ -1,0 +1,18 @@
+{
+  "header": {
+    "home": "Inicio",
+    "introduction": "Introducción",
+    "theoreticalFundaments": "Fundamentos Teóricos",
+    "networkHardware": "Hardware de redes",
+    "news": "Noticias",
+    "conclusion": "Conclusión"
+  },
+  "main": {
+    "title": "Redes Informáticas",
+    "subtitle": "La exploración de los routers, switch, módem y servidores.",
+    "teamButton": "Miembros del Equipo"
+  },
+  "footer": {
+    "Rights": "Todos Los Derechos al equipo Universitario compuesto por Mujahid, Javier y Francisco &copy;"
+  }
+}

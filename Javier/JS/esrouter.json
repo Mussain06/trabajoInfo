@@ -1,0 +1,39 @@
+{
+  "header": {
+    "home": "Inicio",
+    "introduction": "Introducción",
+    "theoreticalFundaments": "Fundamentos Teóricos",
+    "networkHardware": "Hardware de redes",
+    "news": "Noticias",
+    "conclusion": "Conclusión"
+  },
+  "main": {
+    "router": "¿Qué es un Router?",
+    "subtitle": "Explora cómo estos dispositivos conectan nuestras redes y el mundo.",
+    "defTitle":"Definición: El Director de Tráfico de la Red",
+    "defRouter":"Un router es un dispositivo de hardware esencial que oopera en la Capa 3 del modelo OSI. Su función principal es conectar dos o más redes informáticas diferentes, como por ejemplo, conectar la red tu hogar (LAN) con la red global de Internet (WAN) <br> <br> Es como un director de tráfico para tus datos, es decir, cuando visitas un sitio web, la información se divide en pequeños paquetes. El router examina la dirección de destino de cada paquete y toma decisiones inteligentes para enviarlo por la ruta más eficiente posible hacia su destino final.",
+    "title2":"Funciones Clave",
+    "travel": "Ejemplo: El viaje de un Paquete",
+    "travelEG": "Ahora con ayuda de las ilustraciones más adelante explicaremos la función más importante del router: el enrutamiento de paquetes entre redes. Observemos primero empieza desde ordenador intentando conectarse a internet, donde el router está tomando las decisiones en cada paso.",
+    "paso1": "Tu PC (192.168.1.10) quiere enviar datos al Servidor (IP Destino). Crea un paquete y lo envía a su puerta de enlace: el Router de Casa.",
+    "paso2":"El Router de Casa (192.168.1.1) recibe el paquete. Revisa su tabla de enrutamiento. Ve que el destino no está en la red local.",
+    "paso3":"El router reenvía el paquete a su propia puerta de enlace: el Router del ISP (Proveedor de Internet).",
+    "paso4":"El Router del ISP recibe el paquete. Consulta su (enorme) tabla de enrutamiento y lo reenvía alsiguiente 'salto' en Internet.",
+    "paso5":"El paquete atraviesa la Red de Internet, 'saltando' entre múltiples routers de núcleo (Core) de alta velocidad.",
+    "paso6": "Finalmente, el paquete llega al Router de Borde del centro de datos y es entregado al Servidor de destino.",
+    "tipos": "Tipos de Routers",
+    "difTipos": "No todos los routers son iguales. Se clasifican según su función, escala y capacidad. Para que te pueda explicar los distintos tipos, al hacer click en los botones te aparecerán la información de cada tipo.",
+    "dome": "Doméstico",
+    "ker": "Núcleo",
+    "dist": "Distribución",
+    "domeTitle": "Router Doméstico",
+    "defDome": "Es el tipo más común. Conecta los dispositivos de una casa. Generalmente incluye un punto de acceso Wi-Fi y funciones de seguridad básicas como NAT y firewall. Está diseñado para ser fácil de usar.",
+    "kerTitle": "Router Núcleo",
+    "defKer": "Son los routers más potentes y de mayor capacidad. Son usadas en grandes redes corporativas. Su única tarea es conmutar paquetes a velocidades extremadamente altas. No tienen Wi-Fi y son muy caros y complejos.",
+    "distTitle": "Router Distribución",
+    "defDist": "Se encuentra en redes empresariales grandes. Actúa como un intermediario entre los routers de 'acceso' (donde se conectan los usuarios) y los routers de 'núcleo'."
+  },
+  "footer": {
+    "Rights": "Todos Los Derechos al equipo Universitario compuesto por Mujahid, Javier y Francisco &copy;"
+  }
+}

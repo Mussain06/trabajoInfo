@@ -1,0 +1,23 @@
+{
+  "header": {
+    "home": "Inicio",
+    "introduction": "Introducción",
+    "theoreticalFundaments": "Fundamentos Teóricos",
+    "networkHardware": "Hardware de redes",
+    "news": "Noticias",
+    "conclusion": "Conclusión"
+  },
+  "main": {
+    "intro": "Introducción",
+    "context": "Contexto general",
+    "definition": "Una red de computadoras es un conjunto de dispositivos interconectados que comparten recursos, información y servicios a través de algún medio de transmisión. Su propósito es facilitar la comunicación y el intercambio de recursos como archivos, datos, acceso a internet, hardware, aplicaciones y servicios. Sus elementos básicos son los dispositivos finales, los dispositivos de red, los medios de transmisión y los protocolos.",
+    "importance": "Importancia de los dispositivos de hardware",
+    "texto": "Son los componentes físicos que establecen y gestionan la comunicación entre distintos equipos de una red. Su importancia reside en que permiten que los dispositivos puedan compartir información o recursos, transmiten datos entre los nodos mediante medios físicos o inalámbricos, dirigen y gestionan el tráfico de red seleccionando la ruta más eficiente, garantizan la seguridad manteniendo la confidencialidad y mejoran el rendimiento proporcionando mayor velocidad y estabilidad. Además, permiten la expansión de la red.",
+    "laMeta": "Objetivo general",
+    "meta": "El objetivo principal de este proyecto es analizar las redes de computadoras, especialmente en uno de sus elementos más importantes: los dispositivos de hardware."
+
+  },
+  "footer": {
+    "Rights": "Todos Los Derechos al equipo Universitario compuesto por Mujahid, Javier y Francisco &copy;"
+  }
+}
