@@ -87,6 +87,10 @@ footer{
     color: #fff;
 
 }
+body{
+    background: url("/Javier/Imagenes/fondoModem.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
 .tituloPrincipal  {
     max-width: 95%;
     margin: 30px auto 10px;
@@ -101,7 +105,7 @@ footer{
 }
 
 #articulos {
-    background: #fff;
+    background: rgb(1, 255, 128);
     max-width: 900px;
     margin: 15px auto;
     padding: 20px;
@@ -127,6 +131,7 @@ footer{
 }
 
 section {
+    background: rgb(1, 255, 128);
     max-width: 900px;
     margin: 30px auto;
     padding: 30px 25px;
@@ -144,3 +149,4 @@ section p {
     line-height: 1.5;
     text-align: justify;
 }
+
