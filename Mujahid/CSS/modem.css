@@ -93,13 +93,109 @@ a{
 footer{
     background-color: #000;
     color: #fff;
-
+    position: relative;
+    bottom: 0;
+    margin-top: 250px;
 }
 
 .texto{
     padding: 30px;
     text-align  : center;
 }
+
+body{
+    background-color: #faf9f8;
+}
+
+#inicio{
+    color: #fff;
+    text-align: center;
+    padding: 70px;
+    font-size: 2.8em;
+}
+
+.tituloPrincipal{
+    background-color: #121a2d;
+    position: absolute;
+    width: 100%;
+    z-index: -4;
+}
+
+
+
+#articulos ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+    top: 150px;
+}
+
+#articulos li {
+    list-style: none;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 35px;
+    transition: all 0.3s ease-out;
+}
+
+#articulos li:hover{
+    background-color: #4338ca;
+    transform: scale(1.2);
+}
+
+#articulos li:hover a{
+    color: #fff;
+}
+
+#definicionModem{
+    position: relative;
+    top: 180px;
+    margin: 50px 200px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 90px;
+    background-color: #fff;
+    font-size: 1.5em;
+}
+
+#definicionModem h2{
+    color: #4338ca;
+}
+
+.tiposModem div{
+    position: relative;
+    top: 180px;
+    margin: 50px 200px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 90px;
+    background-color: #fff;
+    font-size: 1.5em;
+    border-left: none;
+    transition: all .7s ease-out;
+}
+
+.tiposModem div:hover{
+    transform: scale(1.1);
+    border-left: 12px solid #4338ca;
+    border-radius: 19px;
+}
+
+.tiposModem h3, .tiposModem p{
+    margin: 20px;
+}
+
+.tiposModem h3, .tiposModem h4{
+    color: #4338ca;
+}
+
+
+
+
+
+
+
 
 
 

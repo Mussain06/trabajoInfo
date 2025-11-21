@@ -1,10 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Source Sans 3", sans-serif;
     scroll-behavior: smooth;
-    
 }
 
 a{
@@ -12,13 +11,10 @@ a{
     color: #3b3b3c;
 }
 
-p{
-    font-size: 1.5rem;
-}
 .cabecera{
-    font-size: inherit;
     position: sticky;
     top: 0;
+    z-index: 200;
 }
 
 .menu{
@@ -33,6 +29,7 @@ p{
     align-items: center;
     width: 50%;
     justify-content: space-between;
+    font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 0.01em;
     color: #3b3b3c;
@@ -58,188 +55,6 @@ p{
 
 .lineaBottom:hover::after{
     width: 100%;
-}
-
-
-body{
-    background-color: #fafaf9;
-}
-
-h1{
-    color: #4338ca;
-}
-
-h2{
-    color: #4338ca;
-}
-
-.textoInicio{
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.imgOrdenador{
-    width: 700px;
-}
-
-.flex-container{
-    display: flex;
-}
-
-.definRed{
-    padding: 20px;
-}
-
-.active{
-    background-color: #4338ca;
-    color: #fff;
-}
-
-.desactive{
-    background-color: rgb(224 231 255);
-    color: #4338ca;
-}
-
-.buttonContainer{
-    margin: 20px 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.buttonModel{
-    font-size: 1.1rem;
-    border-radius: 10px;
-    border: none;
-    padding: 15px;
-}
-
-.modelosTeoricos{
-    margin: 20px;
-}
-
-.h2Teorico{
-    padding-left: 10px;
-    padding-bottom: 20px;
-}
-
-.tituloH3{
-    text-align: center;
-    margin-top: 30px;
-    color: #44403c
-}
-
-.itemCapa{
-    background-color: #e0e7ff;
-    margin: 10px 30px;
-    font-weight: bolder;
-    border-radius: 8px;
-    padding: 15px 0;
-    font-size: 0.9em;
-    text-align: center;
-    color: #4338ca;
-    border: 1px solid rgb(99 102 241);
-    transition: all .2s ease-out;
-    min-width: 800px;
-}
-
-.itemCapa:hover{
-    background-color:  #92acffe1;
-    transform: scale(1.06);
-}
-
-
-.cajaInfo{
-    margin: 20px;
-    box-shadow: -2px -2px 38px -8px rgba(0,0,0,0.45);
-    border-radius: 9px;
-    margin-top: 70px;
-}
-
-.tituloCapa{
-    font-size: 1.5em;
-}
-
-.tituloCapa, .subtitulo{
-    padding:  10px 20px;
-    color: #4338ca;
-}
-
-.containerInfo{
-    display: flex;
-    justify-content: space-between;
-}
-
-.smallText {
-    padding: 10px 30px;
-}
-
-.itemInfo{
-    margin: 20px;
-    box-shadow: -2px -2px 38px -8px rgba(0,0,0,0.45);
-    border-radius: 9px;
-    margin-top: 30px;
-    padding: 10px;
-    text-align: center;
-}
-
-.tituloAd{
-    margin: 20px 30px;
-}
-
-.textIntroAd{
-    margin: 10px 20px;
-}
-
-.topRed{
-    margin-left: 30px;
-    margin-top: 20px;
-}
-
-.topText{
-    margin-left: 60px;
-    margin-top: 20px;
-}
-
-.Protocolos, .direccionamiento{
-    margin: 30px;
-}
-
-.prototext, .direcText{
-    margin: 20px 0;
-    padding-left: 30px;
-}
-
-.listContainer{
-    padding-left: 60px;
-}
-
-.grafica{
-    padding-left: 30px;
-    display: flex;
-}
-
-.listDirect{
-    margin-top: 30px;
-    padding-left: 60px;
-}
-
-.itemDirect{
-    margin-top: 20px;
-}
-
-.itemList{
-    margin: 20px 0;
-}
-
-footer{
-    background-color: #000;
-    color: #fff;
-}
-
-.texto{
-    padding: 30px;
-    text-align  : center;
 }
 
 
@@ -275,9 +90,154 @@ footer{
     color: #fff;
 }
 
+footer{
+    background-color: #000;
+    color: #fff;
+
+}
+
+.texto{
+    padding: 30px;
+    text-align  : center;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: #eee;
+}
+
+
+section h1,
+section h2,
+section h3 {
+    color: black;
+    text-decoration: underline;
+    background-color: transparent;
+    text-align: left;
+}
+
+.modelosTeoricos:hover{
+    transform: scale(1.03);
+    background-color: #08A3BF;
+    transition: all ;
+}
 
 
 
+section p {
+    font-size: 16px;
+    color: #000;
+    text-align: justify;
+}
 
 
+.flex-container {
+    display: flex;
 
+}
+
+.textoInicio {
+    border: 1px dotted red;
+    padding: 10px;
+    background-color: white;
+}
+
+
+.imgOrdenador {
+    width: 500px;
+    height: auto;
+    border: 5px solid blue;
+    margin-top: 10px;
+}
+
+
+.buttonContainer {
+    display: block;
+    text-align: center;
+}
+
+.buttonModel {
+    background-color: #ddd;
+    color: black;
+    border: 2px outset buttonface;
+    border-radius: 0;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.containerInfo {
+    display: block;
+}
+
+.itemCapa {
+    background-color: cyan;
+    color: black;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 0;
+    min-width: auto;
+    transform: none;
+    text-align: left;
+}
+
+.itemCapa:hover {
+    transform: none;
+    background-color: yellow;
+}
+
+
+.cajaInfo,
+.itemInfo {
+    box-shadow: none;
+    border: 3px solid green;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: white;
+}
+
+.listaMenu {
+    list-style-type: none;
+}
+
+section ul,
+section li {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.grafica {
+    display: block;
+    padding: 10px;
+    border: 1px dashed black;
+}
+
+.grafica img {
+    max-width: 100%;
+}
+
+.buttonModel{
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+}
+
+.grafica{
+    display: flex;
+    align-items: center;
+}
+
+.textGrafica{
+    padding: 50px;
+}

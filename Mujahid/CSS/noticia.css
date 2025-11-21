@@ -1,3 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
     color: #3b3b3c;
@@ -93,102 +101,100 @@ footer{
     text-align  : center;
 }
 
-
-body {
-    margin: 0;
-    font-family: "Source Sans 3", sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
+body{
+    background-color: #faf9f8;
 }
 
-.cabecera {
-    width: 100%;
-    background-color: #ffffff;
-    border-bottom: 2px solid #af1c2e;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
+section{
+    margin: 50px 200px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 50px;
+    background-color: #fff;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    padding: 10px 25px;
-    gap: 30px;
+.título{
+    font-size: 2.5rem;
+    color: #4338ca;
 }
 
-.listaMenu {
+.subtitulo{
+    font-size: 1.1rem;
+    color: #64748f;
+    padding: 20px;
+    border-bottom: 1px solid #64748f;
+}
+
+#introducción{
+    text-align: left;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+#introducción p{
+    margin-bottom: 30px;
+}
+
+.titulo{
+    font-size: 2.0rem;
+    color: #4338ca;
+    text-align: left;
+}
+
+#AIFactory{
+    text-align: left;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.lista{
+    background-color:  #3842ca52;
+    padding: 40px;
+    border-left: 8px solid #4338ca;
+    margin: 30px 0;
+}
+
+.titulo2{
+    font-size: 1.4rem;
+    color: #4338ca;
+    text-align: left;
+}
+
+.lista li{
     list-style: none;
-    display: flex;
-    gap: 25px;
+}
+
+.lista p{
+    text-align: left;
+}
+
+#pila{
     padding: 0;
-    margin: 0;
-}
-
-.listaMenu li {
-    font-weight: 600;
-    position: relative;
-    cursor: pointer;
-}
-
-.lineaBottom span {
-    padding-bottom: 5px;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.listaMenu li:hover span {
-    color: #af1c2e;
-    transform: translateY(-2px);
 }
 
 
-.lineaBottom::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 3px;
-    background-color: #af1c2e;
-    transition: width 0.3s ease;
-    margin-top: 4px;
+#pila p{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
 }
 
-.listaMenu li:hover .lineaBottom::after {
-    width: 100%;
+#Implicaciones p{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
 }
 
-h1, h2, h3, h4 {
-    color: #af1c2e;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-left: 10px;
+#infraestructura, #Implicaciones{
+    padding: 0;
+}
+#infraestructura p{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
 }
 
-p {
-    line-height: 1.65;
-    padding: 15px 25px;
-    padding-left: 15px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
 
-footer {
-    background-color: #af1c2e;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-    font-weight: 600;
-    color:black
-}
-#mi_foto{
-	float: right;
-	width: 11%;
-	border: solid;
-}
 
 

@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,174 +8,174 @@
 
 /*CSS DE LA PÁGINA*/
 
-.tituloPrinc{
-    font-size: 3.3em;
-    margin: 30px 0 0 30px;
-    color: #4338ca;
+body {
+    background-color: #ffffff;
 }
 
-.subtitulo{
+
+section {
+    font-family: "Times New Roman", Times, serif ;
+    padding: 20px;
+    margin: 20px;
+    border: 1px dashed black;
+
+}
+
+
+.tituloPrinc,
+.titDef,
+.titEjem,
+.titRouter,
+section h4 {
+    color: black ;
+
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.tituloPrinc {
+    font-size: 2em ;
+    margin: 0 ;
+}
+
+.subtitulo {
+    font-size: 1.2em ;
+    color: gray ;
+    margin: 10px 0 ;
+    font-style: italic;
+}
+
+
+
+.containerFlex {
+    display: flex ;
+    justify-content: space-around;
+}
+
+
+
+.textoContainer {
+    max-width: 60% ;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+
+.imgGif {
+    position: static ;
+    width: 300px;
+    border: 5px solid red;
     margin-top: 20px;
-    font-size: 1.3em;
-    margin-left: 60px;
-    color: #3b3b3c;
 }
 
-.defin{
-    margin: 30px 50px;
-    font-size: 1.5em;
+.cajadef {
+    background-color: yellow ;
+    color: black ;
+    border: 2px solid black ;
+    margin: 20px 0 ;
+    padding: 10px ;
 }
 
-
-.containerFlex{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+.cajadef ul {
+    list-style-type: circle;
+    padding-left: 20px ;
 }
 
-.textoContainer{
-    max-width: 900px;
-    margin-top: 30px;
-}
-
-.titDef{
-    color: #4338ca;
-    font-size: 1.5em;
-    margin: 20px 0;
-}
-
-.imgGif{
-    position: relative;
-    bottom: 48px;
-    right: 118px;
-}
-
-.cajadef{
-    color: #1e3a8a;
-    background-color: #eff6ff;
-    margin:  0 30px;
-    border-left: 7px solid #1e3a8a;
-}
-
-.cajadef h4{
-    padding: 20px;
-    font-size: 1.3em;
-}
-
-.cajadef ul{
-   padding-left: 50px;
-}
-
-.itemDef{
-    padding: 20px;
-}
-
-.titEjem{
-    color: #4338ca;
-    margin: 20px 30px;
-}
-
-.textEjem{
-    padding: 30px;
-}
-.ejemplo{
-    font-size: 1.5em;;
-}
-
-.ilustaciones{
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
+.itemDef {
+    padding: 5px ;
+    border-bottom: 1px solid #ccc;
 }
 
 
-.listaOrdenada{
-    margin: auto;
-    max-width: max-content;
-}
-
-.itemOrdenada{
-    margin-bottom: 30px;
-}
-
-.itemIlus{
-    border: #4338ca 3px dotted;
-    padding: 40px;
+.ilustaciones {
+    display: flex ;
     text-align: center;
     margin: 30px 0;
 }
 
-.active{
-    background-color: #4338ca;
-    color: #fff;
+.itemIlus {
+    border: 2px solid black ;
+    background-color: #eee;
+    margin: 10px auto ;
+    padding: 10px ;
+    width: 200px;
+
 }
 
-.desactive{
-    background-color: rgb(224 231 255);
-    color: #4338ca;
+.colorGris {
+    color: green ;
+    font-weight: bold;
 }
 
-.buttonContainer{
-    margin: 20px 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+
+.listaOrdenada {
+    max-width: 100% ;
+    text-align: left;
+    padding-left: 40px;
 }
 
-.buttonModel{
+.itemOrdenada {
+    margin-bottom: 10px ;
+}
+
+
+.buttonContainer {
+    display: block ;
+    text-align: center;
+}
+
+.buttonModel {
     font-size: 1.1rem;
     border-radius: 10px;
     border: none;
     padding: 15px;
+    cursor: pointer;
+    margin: 20px;
+    background-color:  #08A3BF;
 }
 
-
-.tipoRouters{
-    margin: 40px;
-    font-size: 1.5em;
-}
-
-.titRouter{
-    color: #4338ca;
-    margin-bottom: 20px;
+.buttonModel:active {
+    border-style: inset ;
 }
 
 /*CSS para Caja Información (NO TOCAR)*/
 
-.containerTexto{
+.containerTexto {
     position: absolute;
     background-color: #fff;
     width: 80%;
     height: 80vh;
     margin: 50px;
-    top: 1207px;
+    top: 600px;
     left: 147px;
     font-size: 3em;
     text-align: center;
     display: flex;
     align-items: center;
-    box-shadow: 10px 10px 144px 168px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 144px 168px rgba(0, 0, 0, 0.6);
     border-radius: 30px;
     transition: transform 0.7s ease-in-out;
 }
 
-.containerTexto h3{
+.containerTexto h3 {
     color: #4338ca;
     margin-bottom: 14px;
 }
 
-.apagar{
+.apagar {
     transform: scale(0);
 }
 
-.quitar{
+.quitar {
     display: none;
 }
 
-.eliminar{
+.eliminar {
     position: absolute;
     top: 14px;
-    right: 20px;        
+    right: 20px;
 }
 
 
@@ -183,24 +183,24 @@
 
 /*CSS del Menu  y footer(NO TOCAR)*/
 
-a{
+a {
     text-decoration: none;
     color: #3b3b3c;
 }
 
-.cabecera{
+.cabecera {
     position: sticky;
     top: 0;
     z-index: 200;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-evenly;
     background-color: #faf9f8;
 }
 
-.listaMenu{
+.listaMenu {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -212,13 +212,13 @@ a{
     color: #3b3b3c;
 }
 
-.listaMenu li{
+.listaMenu li {
     position: relative;
     padding: 10px 0px;
     cursor: pointer;
 }
 
-.lineaBottom::after{
+.lineaBottom::after {
     content: "";
     left: 0;
     width: 0;
@@ -227,17 +227,17 @@ a{
     position: absolute;
     background: #c78b86;
     transition: width .28s ease-in-out
-    
 }
 
-.lineaBottom:hover::after{
+.lineaBottom:hover::after {
     width: 100%;
 }
 
 
-.spanAfter{
+.spanAfter {
     position: absolute;
-    background-color: #08A3BF;;
+    background-color: #08A3BF;
+    ;
     left: -50px;
     top: 60px;
     width: 250px;
@@ -252,7 +252,7 @@ a{
 
 
 
-.spanAfter::after{
+.spanAfter::after {
     content: "";
     position: absolute;
     top: -18px;
@@ -263,22 +263,17 @@ a{
     border-bottom: 20px solid #08A3BF;
 }
 
-.spanAfter a{
+.spanAfter a {
     color: #fff;
 }
 
-footer{
+footer {
     background-color: #000;
     color: #fff;
 
 }
 
-.texto{
+.texto {
     padding: 30px;
-    text-align  : center;
+    text-align: center;
 }
-
-
-
-
-
