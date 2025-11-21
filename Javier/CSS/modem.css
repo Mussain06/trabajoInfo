@@ -1,15 +1,14 @@
 /*-----------Body---------------*/
 body {
-    background-color: #ffcceeb8;
+    background-color: white;
     font-family: 'Arial', sans-serif;
     color:black;
 }
 /*-----HEADER------*/
 .tituloPrincipal {
     /*color y borde*/
-    background: #fbafff;
+    background: green;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgb(255 255 255 / 22%);
     text-align: center;
     /*evita el desborde al hacer pequeña la pantalla, no lo quiteis*/
     max-width: 95%;
@@ -19,7 +18,7 @@ body {
 .tituloPrincipal h1 {
     margin: 0;
     font-size: 32px;
-    color: #000000;
+    color: white;
 }
 /*------NAV--------*/
 #articulos {
@@ -29,10 +28,7 @@ body {
     max-width: 95%;
     margin: 0 auto;
     /*En la primerisima capa, si le quitais el sticky no es necesario*/
-    z-index: 1000;
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 1px 6px rgb(255 255 255 / 10%);
+
 }
 #articulos ul {
     /*Puse los links de manera similar a la galeria que hicimos, que no se pierda texto si menguamos pantalla*/
