@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Francisco/CSS/style.css">
-    <title>Proyecto Informática</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Information technology project</title>
 </head>
 
 <body>
@@ -26,22 +26,22 @@
             <ul class="listaMenu">
                 <li class="listaMenu_0">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/index.html">Inicio</a></span>
+                        <span><a href="/Francisco/HTML/index.html" data-section="header" data-value="home">Home</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_1">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/introduccion.html">Introduccion</a></span>
+                        <span><a href="/Francisco/HTML/introduccion.html" data-section="header" data-value="introduction">Introduction</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_2">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/redes_informaticas.html">Fundamentos Teóricos</a></span>
+                        <span><a href="/Francisco/HTML/redes_informaticas.html" data-section="header" data-value="theoreticalFundaments">Theoretical fundaments</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_3">
                     <div class="lineaBottom">
-                        <span class="select">Hardware de redes</span>
+                        <span class="select" data-section="header" data-value="networkHardware">Network hardware</span>
                         <div class="spanAfter">
                             <a href="/Francisco/HTML/routers.html">Router</a>
                             <a href="/Francisco/HTML/switch.html">Switch</a>
@@ -51,27 +51,32 @@
                 </li>
                 <li class="listaMenu_4">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/noticia.html">Noticias</a></span>
+                        <span><a href="/Francisco/HTML/noticia.html" data-section="header" data-value="news">News</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_5">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/conclusion.html">Conclusión</a></span>
+                        <span><a href="/Francisco/HTML/conclusion.html" data-section="header" data-value="conclusion">Conclusion</a></span>
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
-    <section>
+    <main>
         <div class="imagenPresentacion">
-            <h1 class="tituloProyecto">
-                Redes Informáticas
+            <h1 class="tituloProyecto" data-section="main" data-value="title">
+                Computer Networks
             </h1>
-            <h2 class="subtitulo">
-                La exploración de los routers, switch, módem y servidores.
+            <h2 class="subtitulo" data-section="main" data-value="subtitle">
+                The explanation of the routers, switch, modem & servers.
             </h2>
-            <button class="botonMiembro"><a href="#miembrosEquipo">Miembros del Equipo</a></button>
+            <button class="botonMiembro" data-section="main" data-value="teamButton"><a href="#miembrosEquipo">Crew members</a></button>
         </div>
+        <div class="languages">
+            <button class="button-language" data-language="es">Español</button>
+            <button class="button-language" data-language="en">English</button>
+        </div>
+
         <div id="miembrosEquipo">
             <div class="miembros">
                 <img src="/Francisco/Imagenes/imagenMiembros.jpg" alt="Foto de Mujahid">
@@ -86,13 +91,14 @@
                 <p class="nombreMiembro">Francisco Artolozaga</p> 
             </div>
         </div>
-    </section>
+    </main>
     <footer>
         <div class="texto">
-            <p>Todos Los Derechos al equipo Universitario compuesto por Mujahid, Javier y Francisco &copy;</p>
+            <p data-section="footer" data-value="Rights">All rights belong to the University team composed of Mujahid, Javier and Francisco &copy;</p>
         </div>
     </footer>
     <script src="/Francisco/JS/headerJS.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

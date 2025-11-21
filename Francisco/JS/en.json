@@ -1,0 +1,18 @@
+{
+  "header": {
+    "home": "Home",
+    "introduction": "Introduction",
+    "theoreticalFundaments": "Theoretical Fundaments",
+    "networkHardware": "Network Hardware",
+    "news": "News",
+    "conclusion": "Conclusion"
+  },
+  "main": {
+    "title": "Computer Networks",
+    "subtitle": "Exploring routers, switches, modems, and servers.",
+    "teamButton": "Crew Members"
+  },
+  "footer": {
+    "Rights": "All Rights Reserved to the University Team composed of Mujahid, Javier and Francisco &copy;"
+  }
+}

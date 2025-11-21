@@ -7,7 +7,8 @@
     <meta name="keywords" content="Trabajo, hardware de red">
     <meta name="description" content="Trabajo sobre los switches en redes informáticas.">
     <title>Switches</title>
-    <link rel="stylesheet" href="/Francisco/CSS/switch.css">
+    <link rel="stylesheet" href="switch.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 
 <body>
@@ -24,22 +25,22 @@
             <ul class="listaMenu">
                 <li class="listaMenu_0">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/index.html">Inicio</a></span>
+                        <span><a href="/Francisco/HTML/index.html" data-section="header" data-value="home">Home</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_1">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/introduccion.html">Introduccion</a></span>
+                        <span><a href="/Francisco/HTML/introduccion.html" data-section="header" data-value="introduction">Introduction</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_2">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/redes_informaticas.html">Fundamentos Teóricos</a></span>
+                        <span><a href="/Francisco/HTML/redes_informaticas.html" data-section="header" data-value="theoreticalFundaments">Theoretical fundaments</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_3">
                     <div class="lineaBottom">
-                        <span class="select">Hardware de redes</span>
+                        <span class="select" data-section="header" data-value="networkHardware">Network hardware</span>
                         <div class="spanAfter">
                             <a href="/Francisco/HTML/routers.html">Router</a>
                             <a href="/Francisco/HTML/switch.html">Switch</a>
@@ -49,46 +50,51 @@
                 </li>
                 <li class="listaMenu_4">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/noticia.html">Noticias</a></span>
+                        <span><a href="/Francisco/HTML/noticia.html" data-section="header" data-value="news">News</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_5">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/conclusion.html">Conclusión</a></span>
+                        <span><a href="/Francisco/HTML/conclusion.html" data-section="header" data-value="conclusion">Conclusion</a></span>
                     </div>
                 </li>
             </ul>
         </nav>
+        <div class="languages">
+            <button class="button-language" data-language="esswitch">Español</button>
+            <button class="button-language" data-language="enswitch">English</button>
+        </div>
     </header>
+    <main>
     <div class="titulo">
-        <h1>Switches (empresa)</h1>
+        <h1 data-section="main" data-value="title">Switches (empresa)</h1>
     </div>
     <div id="principio">
         <section id="definicion">
-            <h2>¿Qué es un switch?</h2>
+            <h2 data-section="main" data-value="question">¿Qué es un switch?</h2>
             <div id="fotoSwitch">
                 <img id="mi_foto" alt="Foto Switch" src="/Francisco/Imagenes/switch.jpg ">
             </div>
-            <p id="definicionSwitch">Un switch es un dispositivo que conecta equipos dentro de una red local (LAN) y
+            <p id="definicionSwitch" data-section="main" data-value="definition">Un switch es un dispositivo que conecta equipos dentro de una red local (LAN) y
                 envía datos solo al destinatario correcto. Trabaja en la capa de acceso a la red (2ª) enlazando datos
                 entre los dispositivos interconectados a una misma red local. En entornos empresariales, los switches
                 son esenciales porque gestionan grandes volúmenes de tráfico, ofrecen funciones avanzadas como
                 segmentación de red (VLAN), priorización de tráfico (QoS) y seguridad a nivel de puerto. </p>
         </section>
 
-        <id id="articulos">
+        <div id="articulos">
             <ul>
-                <li><a href="#Conmutacion">Conmutación de tramas dentro de una red local</a></li>
-                <li><a href="#TablaMAC">Tabla MAC y proceso de conmutación</a></li>
-                <li><a href="#VLANSEMPRESA">VLANs y segmentación de red </a></li>
+                <li><a href="#Conmutacion" data-section="main" data-value="tramas">Conmutación de tramas dentro de una red local</a></li>
+                <li><a href="#TablaMAC" data-section="main" data-value="MAC">Tabla MAC y proceso de conmutación</a></li>
+                <li><a href="#VLANSEMPRESA" data-section="main" data-value="VLAN">VLANs y segmentación de red </a></li>
             </ul>
-    </div>
+        </div>
     </div>
 
     <div id="TramasConmutacion">
         <section>
-            <h3 id="Conmutacion">Conmutación de tramas dentro de una red local</h3>
-            <p>El proceso de conmutación es el mecanismo principal mediante el cual un switch envía tramas de datos
+            <h3 id="Conmutacion" data-section="main" data-value="conmutacionTramas">Conmutación de tramas dentro de una red local</h3>
+            <p data-section="main" data-value="defTramas">El proceso de conmutación es el mecanismo principal mediante el cual un switch envía tramas de datos
                 desde un dispositivo origen hacia su destino dentro de la red, aplicando un filtro, el switch analiza la
                 dirección MAC destino y decide si enviarla o no a los distintos puertos utilizando las direcciones MAC.
                 Aun así, también se pueden configurar. </p>
@@ -96,14 +102,12 @@
                 class="conmutaciónImg"><img class="switch-item" src="conmutacion.jpg" alt="Foto Conmutación">
             </a>
             <nav id="Funcionamiento">
-                <p class="Funcionamiento">Funcionamiento General</p>
+                <p class="Funcionamiento" data-section="main" data-value="funTramas">Funcionamiento General</p>
                 <ol>
-                    <li>Un dispositivo (A) envía una trama hacia otro (B). </li>
-                    <li>El switch recibe la trama en un puerto. </li>
-                    <li>Consulta su tabla de direcciones MAC (MAC address table). </li>
-                    <li>Consulta su tabla de direcciones MAC (MAC address table). </li>
-                    <li>Si no lo conoce, envía la trama por todos los puertos excepto el de origen (flooding), y aprende
-                        la MAC de B. </li>
+                    <li data-section="main" data-value="uno">Un dispositivo (A) envía una trama hacia otro (B). </li>
+                    <li data-section="main" data-value="dos">El switch recibe la trama en un puerto. </li>
+                    <li data-section="main" data-value="tres">Consulta su tabla de direcciones MAC (MAC address table). </li>
+                    <li data-section="main" data-value="cuatro">Si no lo conoce, envía la trama por todos los puertos excepto el de origen (flooding), y aprende la MAC de B. </li>
                 </ol>
             </nav>
         </section>
@@ -111,8 +115,8 @@
 
     <div id="TablaMAC">
         <section>
-            <h3 id="Tabla">Tabla MAC y proceso de conmutación</h3>
-            <p>La tabla MAC es una memoria interna del switch que asocia direcciones MAC con puertos físicos. Las
+            <h3 id="Tabla" data-section="main" data-value="tablaMAC">Tabla MAC y proceso de conmutación</h3>
+            <p data-section="main" data-value="defMAC">La tabla MAC es una memoria interna del switch que asocia direcciones MAC con puertos físicos. Las
                 direcciones MAC vienen predefinidas en los dispositivos, pues estos dispositivos se conectan al switch y
                 a cada dirección MAC se le asocia a un puerto. Para que esto suceda hay dos formas, la primera es no
                 tocar la tabla MAC, pasará lo explicado anteriormente, flooding (necesario) y aprendiendo todas las
@@ -120,109 +124,117 @@
                 conectados al mismo switch, un vez aprendidas, se marcará una distinción y estas direcciones serán
                 dinamicas con una caducidad de no más de 10 minutos. El otro modo es configurar uno mismo la tabla MAC,
                 de este modo la entrada será estática, útil para los dispositivos que no estén en constante tráfico de
-                datos</p>
+                datos.
+            </p>
             <table id="Tabla-MAC">
                 <colgroup id="ejemploMAC" span="4"> </colgroup>
                 <tr id="Arriba">
-                    <th>Dirección MAC</th>
-                    <th>Puerto</th>
-                    <th>Tipo</th>
-                    <th>Device</th>
+                    <th data-section="main" data-value="MACdire">Dirección MAC</th>
+                    <th data-section="main" data-value="MACport">Puerto</th>
+                    <th data-section="main" data-value="MACtype">Tipo</th>
+                    <th data-section="main" data-value="MACdevice">Device</th>
                 </tr>
                 <tr>
                     <td>J0:16:2B:38:4C:5E</td>
-                    <td>Puerto 1</td>
-                    <td>Estática</td>
-                    <td>Servidor principal</td>
+                    <td data-section="main" data-value="MACport1">Puerto 1</td>
+                    <td data-section="main" data-value="static">Estática</td>
+                    <td data-section="main" data-value="MACdevice1">Servidor principal</td>
                 </tr>
                 <tr>
                     <td>31:A2:13:B4:CD:46</td>
-                    <td>Puerto 2</td>
-                    <td>Dinámica</td>
-                    <td>Ordenadore 1</td>
+                    <td data-section="main" data-value="MACport2">Puerto 2</td>
+                    <td data-section="main" data-value="dynamic">Dinámica</td>
+                    <td data-section="main" data-value="MACdevice2">Ordenador 1</td>
                 </tr>
                 <tr>
                     <td>AA:BB:CC:DD:EE:FF</td>
-                    <td>Puerto 3</td>
-                    <td>Dinámica</td>
-                    <td>Ordenador 2</td>
+                    <td data-section="main" data-value="MACport3">Puerto 3</td>
+                    <td data-section="main" data-value="dynamic">Dinámica</td>
+                    <td data-section="main" data-value="MACdevice3">Ordenador 2</td>
                 </tr>
                 <tr>
                     <td>89:3B:1C:D6:EE:GG</td>
-                    <td>Puerto 4</td>
-                    <td>Dinámica</td>
-                    <td>Impresora 1</td>
+                    <td data-section="main" data-value="MACport4">Puerto 4</td>
+                    <td data-section="main" data-value="dynamic">Dinámica</td>
+                    <td data-section="main" data-value="MACdevice4">Impresora 1</td>
                 </tr>
                 <tr>
                     <td>GG:WP:GG:WP:NT:NT</td>
-                    <td>Puerto 5</td>
-                    <td>Dinámica</td>
-                    <td>Impresora 2</td>
+                    <td data-section="main" data-value="MACport5">Puerto 5</td>
+                    <td data-section="main" data-value="dynamic">Dinámica</td>
+                    <td data-section="main" data-value="MACdevice5">Impresora 2</td>
                 </tr>
             </table>
-            <p>Cuando un switch recibe una trama en un puerto:
-            <ul>
-                <li>Si la dirección está en la tabla MAC:
-                    El switch envía la trama solo por el puerto asociado.</li>
-                <li>Si la dirección NO está en la tabla MAC:
-                    El switch envía la trama a todos los puertos excepto el de origen.</li>
-            </ul>
-            Si no se detecta trafico en un puerto durante un tiempo, la entrada correspondiente en la tabla MAC puede
-            eliminarse para liberar espacio y mantener la tabla actualizada.
+            <p data-section="main" data-value="aclaracion">Cuando un switch recibe una trama en un puerto: 
+                <br>
+                Si la dirección está en la tabla MAC:
+                    El switch envía la trama solo por el puerto asociado.
+                Si la dirección NO está en la tabla MAC:
+                    El switch envía la trama a todos los puertos excepto el de origen.
+                <br>
+                Si no se detecta trafico en un puerto durante un tiempo, la entrada correspondiente en la tabla MAC puede
+                eliminarse para liberar espacio y mantener la tabla actualizada.
             </p>
         </section>
     </div>
 
     <div id="VLANSEMPRESA">
         <section>
-            <h3 id="VLANs">VLANs y segmentación de red</h3>
-            <h4>¿Qué son los VLANs?</h4>
-            <p>Permite dividir una red física en varias redes lógicas independientes, incluso si los dispositivos están
-                conectados al mismo switch físico. Cada VLAN funciona como si fuera una red separada, lo que aumenta la
-                seguridad y mejora la gestión del tráfico. Una empresa puede separar el switch de 8 puertos en 8 puertos
-                o de cualquier otra forma en VLANs para evitar la comunicación entre, por ejemplo, los pisos; recursos
-                humanos, administración, etc y solo pueden comunicarse entre el mismo VLAN, y si están conectados a una
-                router pueden comunicarse entre ellos. </p>
-            <h4>¿Cómo funciona la segmentacion de red?</h4>
-            <p>Se trata de dividir una red en subredes más pequeñas, con el objetivpde de limtar el tráfico, controlar
-                el acceso y mejorar la seguridad, haciendo de esto un funcionamiento mucho mas optimo</p>
-            <h4>Red corporativa</h4>
-            <p>Un ejemplo en una red corporativa: <br> Imagina que en una empresa tienes 3 departamentos.
-                Administracion, Ventas y Soporte técnico</p>
+            <h3 id="VLANs" data-section="main" data-value="VLAN">VLANs y segmentación de red</h3>
+            <h4 data-section="main" data-value="queVLAN">¿Qué son los VLANs?</h4>
+                <p data-section="main" data-value="defVLAN">Permiten dividir una red física en varias redes lógicas independientes, incluso si los dispositivos están
+                    conectados al mismo switch físico. Cada VLAN funciona como si fuera una red separada, lo que aumenta la
+                    seguridad y mejora la gestión del tráfico. Una empresa puede separar el switch de 8 puertos en 8 puertos
+                    o de cualquier otra forma en VLANs para evitar la comunicación entre, por ejemplo, los pisos; recursos
+                    humanos, administración, etc y solo pueden comunicarse entre el mismo VLAN, y si están conectados a una
+                    router pueden comunicarse entre ellos. </p>
+            
+            <h4 data-section="main" data-value="funVLAN">¿Cómo funciona la segmentacion de red?</h4>
+                <p data-section="main" data-value="funVLANtext">Cada puerto del switch se asigna a una VLAN específica. Los dispositivos conectados a puertos en la misma VLAN
+                    pueden comunicarse directamente entre sí, mientras que la comunicación entre diferentes VLANs requiere
+                    un router o un switch de capa 3. Esto mejora la seguridad al limitar el acceso entre segmentos de red
+                    y reduce el tráfico innecesario al confinar la comunicación dentro de cada VLAN.</p>
+            <h4 data-section="main" data-value="redCorpo">Red corporativa</h4>
+                <p data-section="main" data-value="egRed">Un ejemplo en una red corporativa: <br> Imagina que en una empresa tienes 3 departamentos.
+                    Administracion, Ventas y Soporte técnico</p>
             <table id="VLANs-eg">
                 <colgroup id="ejemploVLAN" span="4"> </colgroup>
                 <tr>
-                    <th>Departamento</th>
+                    <th data-section="main" data-value="lugar1">Departamento</th>
                     <th>VLAN</th>
-                    <th>Rango IP</th>
-                    <th>Restricciones</th>
+                    <th data-section="main" data-value="IP">Rango IP</th>
+                    <th data-section="main" data-value="permisos">Restricciones</th>
                 </tr>
                 <tr>
-                    <td>Administración</td>
+                    <td data-section="main" data-value="lugar2">Administración</td>
                     <td>VLAN 10</td>
                     <td>192.65.45.10</td>
-                    <td>Aislado</td>
+                    <td data-section="main" data-value="permisos1">Aislado</td>
                 </tr>
                 <tr>
-                    <td>Ventas</td>
+                    <td data-section="main" data-value="lugar3">Ventas</td>
                     <td>VLAN 20</td>
                     <td>192.65.45.20</td>
-                    <td>Aislado</td>
+                    <td data-section="main" data-value="permisos1">Aislado</td>
                 </tr>
                 <tr>
-                    <td>Soporte técnico</td>
+                    <td data-section="main" data-value="lugar4">Soporte técnico</td>
                     <td>VLAN 30</td>
                     <td>192.65.45.30</td>
-                    <td>Sin restricciones de acceso</td>
+                    <td data-section="main" data-value="permisos2">Sin restricciones de acceso</td>
                 </tr>
             </table>
         </section>
     </div>
-
+    </main>
     <footer>
+        <div class="texto">
+            <p data-section="footer" data-value="Rights">All rights belong to the University team composed of Mujahid, Javier and Francisco &copy;</p>
+        </div>
         <a href="#inicio">RETURN</a>
     </footer>
-    <script src="/Francisco/JS/headerJS.js"></script>
+    <script src="headerJS.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

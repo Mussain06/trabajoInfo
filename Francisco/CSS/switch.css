@@ -250,28 +250,6 @@ body{/*posibilidad de poner una imagen de fondo, yo pondré un color*/
     padding: 11px;
     transition: 0.7s ease;
 }
-td:hover{/*Meramente decorativo para dar flasa sensacion de interactividad*/
-	background: #c9f0ff;
-	transition: 0.7s ease;
-}
-th{ 
-	background-color:#aeff8b;
-}
-table {
-	width: 90%;
-	align-items: anchor-center;
-    border-collapse: collapse;
-    margin-top: 18px;
-    background: #ffffff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-}
-th, td {
-    padding: 10px 12px;
-    border: 1px solid #000000;
-    text-align: left;
-    vertical-align: top;
-    font-size: 0.94rem;
-}
 /*---FOOTER-----*/
 /*-----FOOTER-----*/
 footer {
@@ -286,4 +264,36 @@ footer a {
 }
 footer a:hover {
     color: #1683ff;
+}
+/*BOTONES*/
+.languages{
+    position: sticky;
+    bottom: 0px;                     
+    right: 20px;                
+    z-index: 3000;              
+    background: rgba(0, 0, 0, 0.01);
+    padding: 8px 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 8px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.languages button {
+    background: rgba(78, 82, 82, 0.655);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 44px;
+    font-size: 14px;
+}
+
+.languages button:hover {
+    background: rgb(141, 186, 190);
+    color: rgb(0, 0, 0);    
+    border: 2px solid white;    
 }

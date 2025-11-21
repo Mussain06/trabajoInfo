@@ -1,0 +1,40 @@
+{
+  "header": {
+    "home": "Home",
+    "introduction": "Introduction",
+    "theoreticalFundaments": "Theoretical Fundaments",
+    "networkHardware": "Network Hardware",
+    "news": "News",
+    "conclusion": "Conclusion"
+  },
+  "main": {
+    "router": "What is a Router?",
+    "subtitle": "Explore how these devices connect our networks and the world.",
+    "defTitle":"Definition: The Network Traffic Director",
+    "defRouter":"A router is an essential hardware device that operates at Layer 3 of the OSI model. Its main function is to connect two or more different computer networks, such as connecting your home network (LAN) to the global Internet network (WAN) <br> <br> It acts like a traffic director for your data, meaning that when you visit a website, the information is divided into small packets. The router examines the destination address of each packet and makes smart decisions to send it via the most efficient route possible to its final destination.",
+    "title2":"Key Functions",
+    "travel": "Example: The Journey of a Packet",
+    "travelEG": "Now with the help of the illustrations later we will explain the most important function of the router: routing packets between networks. Let's first observe it starts from a computer trying to connect to the internet, where the router is making decisions at each step.",
+    "paso1": "Your PC (192.168.1.10) wants to send data to the Server (Destination IP). It creates a packet and sends it to its gateway: the Home Router.",
+    "paso2":"The Home Router ( 192.168.1.10) receives the packet. It checks its routing table. It sees that the destination is not on the local network.",
+    "paso3":"The router forwards the packet to its own gateway: the ISP (Internet Service Provider) Router.",
+    "paso4":"The ISP Router receives the packet. It consults its (huge) routing table and forwards it to the next 'hop' on the Internet.",
+    "paso5":"The packet traverses the Internet Network, 'hopping' between multiple high-speed core routers.",
+    "paso6": "Finally, the packet reaches the Edge Router of the data center and is delivered to the destination Server.",
+    "tipos": "Types of Routers",
+    "difTipos": "Not all routers are the same. They are classified according to their function, scale, and capacity. To explain the different types, by clicking on the buttons you will see the information for each type.",
+    "dome": "Domestic",
+    "ker": "Core",
+    "dist": "Distribution",
+    "domeTitle": "Domestic Router",
+    "defDome": "It is the most common type. It connects devices in a home. It generally includes a Wi-Fi access point and basic security features like NAT and firewall. It is designed to be user-friendly.",
+    "kerTitle": "Core Router",
+    "defKer": "These are the most powerful and high-capacity routers. They are used in large corporate networks. Their sole task is to switch packets at extremely high speeds. They do not have Wi-Fi and are very expensive and complex.",
+    "distTitle": "Distribution Router",
+    "defDist": "It is found in large enterprise networks. It acts as an intermediary between 'access' routers (where users connect) and 'core' routers."
+  
+  },
+  "footer": {
+    "Rights": "All Rights Reserved to the University Team composed of Mujahid, Javier and Francisco &copy;"
+  }
+}

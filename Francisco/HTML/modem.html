@@ -6,7 +6,7 @@
     <meta name="keywords" content="Trabajo, hardware de red">
     <meta name="description" content="Trabajo sobre los switches en redes informáticas.">
     <title>Modems</title>
-    <link rel="stylesheet" href="/Francisco/CSS/modem.css"> 
+    <link rel="stylesheet" href="modem.css"> 
 </head>
 <body>
     <header class="cabecera">
@@ -22,22 +22,22 @@
             <ul class="listaMenu">
                 <li class="listaMenu_0">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/index.html">Inicio</a></span>
+                        <span><a href="/Francisco/HTML/index.html" data-section="header" data-value="home">Home</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_1">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/introduccion.html">Introduccion</a></span>
+                        <span><a href="/Francisco/HTML/introduccion.html" data-section="header" data-value="introduction">Introduction</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_2">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/redes_informaticas.html">Fundamentos Teóricos</a></span>
+                        <span><a href="/Francisco/HTML/redes_informaticas.html" data-section="header" data-value="theoreticalFundaments">Theoretical fundaments</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_3">
                     <div class="lineaBottom">
-                        <span class="select">Hardware de redes</span>
+                        <span class="select" data-section="header" data-value="networkHardware">Network hardware</span>
                         <div class="spanAfter">
                             <a href="/Francisco/HTML/routers.html">Router</a>
                             <a href="/Francisco/HTML/switch.html">Switch</a>
@@ -47,84 +47,94 @@
                 </li>
                 <li class="listaMenu_4">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/noticia.html">Noticias</a></span>
+                        <span><a href="/Francisco/HTML/noticia.html" data-section="header" data-value="news">News</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_5">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/conclusion.html">Conclusión</a></span>
+                        <span><a href="/Francisco/HTML/conclusion.html" data-section="header" data-value="conclusion">Conclusion</a></span>
                     </div>
                 </li>
             </ul>
         </nav>
+        <div class="languages">
+            <button class="button-language" data-language="esmodem">Español</button>
+            <button class="button-language" data-language="enmodem">English</button>
+        </div>
     </header>
     <div class="tituloPrincipal">
         <h1 id="inicio">Modems</h1>    
     </div>
+    <main>
     <div id="articulos">
         <ul>
             
             <li><a href="#ModemADSL">ADSL/xDSL</a></li>
             <li><a href="#ModemCableDOCSIS">DOCSIS</a></li>
-            <li><a href="#Fibraóptica">Fibra Óptica</a></li>
-            <li><a href="#ModemSatelital">Satelital</a></li>
-            <li><a href="#ModemMovil">Móvil</a></li>
+            <li><a href="#Fibraóptica" data-section="main" data-value="optica">Fiber Optic</a></li>
+            <li><a href="#ModemSatelital" data-section="main" data-value="satelitals">Satelital</a></li>
+            <li><a href="#ModemMovil" data-section="main" data-value="movilt">Mobile</a></li>
         </ul>
     </div>
     <section id="definicionModem">
         <div>
-            <h2>¿Qué es un modem?</h2>
+            <h2 data-section="main" data-value="modemq">What is a modem?</h2>
             <div id="fotoModem">
                 <img id="mi_foto" alt="Foto Modem" src="modem.jpg ">
             </div>
-            <p id="que_esModem">Un módem (modulador-demodulador) es un dispositivo que convierte las señales digitales de una computadora en señales analógicas para su transmisión a través de líneas telefónicas u otros medios de comunicación, y viceversa. Permite la conexión a Internet y la comunicación entre redes. Los módems pueden ser internos (tarjetas instaladas dentro de la computadora) o externos (dispositivos independientes conectados a través de puertos como USB o Ethernet). En resumen modula al conviertir datos digitales en señales analógicas, de radiofrecuencia o luminosas, según la tecnología (PSTN, coaxial, fibra, celular, etc.) y demodula, transforma la señal recibida del ISP nuevamente en datos digitales para ser utilizados por la red local. </p>
+            <p id="que_esModem" data-section="main" data-value="modemText">A modem (modulator-demodulator) is a device that enables Internet connection by converting digital signals from a computer into analog signals that can be transmitted over telephone lines, coaxial cables, or wireless signals, and vice versa.</p>
         </div>
     </section>
     <section class="tiposModem">
         <div id="ModemADSL">
-            <h3>Módem ADSL</h3>
-                <h4>¿Que es un módem ADSL/xDSL?</h4>
-                    <p>El módem ADSL (Asymmetric Digital Subscriber Line) es un tipo de módem que utiliza el par de cobre de la línea telefónica tradicional para proporcionar conexión a Internet. Permite transmitir datos y voz en el mismo cable gracias a la separación de frecuencias.</p>
-                <h4>Funcionamiento del módem ADSL/xDSL</h4>
-                    <p>El módem ADSL modula la señal digital para enviarla como señales analógicas de alta frecuencia por el par de cobre. En la central telefónica, el DSLAM demodula esa señal y la conecta a Internet.</p>
+            <h3 data-section="main" data-value="ADSL">Modem ADSL</h3>
+                <h4 data-section="main" data-value="ADSLq">What is an ADSL/xDSL modem?</h4>
+                    <p data-section="main" data-value="ADSLtext">An ADSL/xDSL modem is a device that allows high-speed Internet access over traditional telephone lines using Asymmetric Digital Subscriber Line (ADSL) technology. It enables simultaneous voice and data transmission by separating the frequency bands used for each service.</p>
+                <h4 data-section="main" data-value="functionADSL">Functioning of the ADSL/xDSL modem</h4>
+                    <p data-section="main" data-value="functionADSLtext">The ADSL modem modulates the digital signal to send it as high-frequency analog signals over the copper pair. At the telephone exchange, the DSLAM demodulates that signal and connects it to the Internet.</p>
         </div>
         
         <div id="ModemCableDOCSIS">
-            <h3>Módem de cable</h3>
-                <h4>¿Qué es un módem de cable DOCSIS?</h4>
-                    <p>El módem de cable DOCSIS (Data Over Cable Service Interface Specification) es un dispositivo que permite la conexión a Internet a través de redes de televisión por cable. Utiliza el cable coaxial para transmitir datos a alta velocidad.</p>
-                <h4>Funcionamiento del módem de cable DOCSIS</h4>
-                    <p>El módem de cable modula las señales digitales en frecuencias adecuadas para su transmisión por el cable coaxial. En la cabecera de la red de cable, un CMTS demodula las señales y las conecta a Internet.</p>
+            <h3 data-section="main" data-value="cable">Cable Modem</h3>
+                <h4 data-section="main" data-value="cableq"> What is a cable modem?</h4>
+                    <p data-section="main" data-value="cableText">A cable modem is a device that enables Internet connection through the cable television infrastructure. It uses coaxial cable to transmit data at high speeds, providing a fast and stable connection.</p>
+                <h4 data-section="main" data-value="functioncable">Functioning of the cable modem</h4>
+                    <p data-section="main" data-value="functioncableText">The cable modem modulates digital signals into radio frequency signals that can be transmitted over the cable TV network. At the cable provider's headend, these signals are demodulated and routed to the Internet.</p>
         </div>
         
         <div id="Fibraóptica">
-            <h3>Módem de fibra óptica</h3>
-                <h4>¿Qué es un módem de fibra óptica?</h4>
-                    <p>El módem de fibra óptica, también conocido como ONT (Optical Network Terminal), es un dispositivo que convierte las señales ópticas transmitidas a través de cables de fibra óptica en señales eléctricas que pueden ser utilizadas por dispositivos electrónicos.</p>
-                <h4>Funcionamiento del módem de fibra óptica</h4>
-                    <p>El módem de fibra óptica recibe señales de luz a través del cable de fibra óptica y las convierte en señales eléctricas. En la central de la red de fibra, un OLT (Optical Line Terminal) modula las señales eléctricas en luz para su transmisión.</p>
+            <h3 data-section="main" data-value="optic">Fiber Optic Modem</h3>
+                <h4 data-section="main" data-value="opticq">What is a fiber optic modem?</h4>
+                    <p data-section="main" data-value="opticText">A fiber optic modem, also known as an Optical Network Terminal (ONT), is a device that converts optical signals transmitted through fiber optic cables into electrical signals that can be used by computers and other devices. It enables high-speed Internet access with low latency.</p>
+                <h4 data-section="main" data-value="functionoptic">Functioning of the fiber optic modem</h4>
+                    <p data-section="main" data-value="functionopticText">The fiber optic modem receives optical signals from the fiber optic network and converts them into electrical signals for use by connected devices. It also converts outgoing electrical signals into optical signals for transmission back to the network.</p>
             </div>
         
         <div id="ModemSatelital">
-            <h3>Módem satelital</h3>
-                <h4>¿Qué es un módem satelital?</h4>
-                    <p>El módem satelital es un dispositivo que permite la conexión a Internet mediante la comunicación con satélites en órbita. Es especialmente útil en áreas rurales o remotas donde otras formas de conexión no están disponibles.</p>
-                <h4>Funcionamiento del módem satelital</h4>
-                    <p>El módem satelital modula las señales digitales en frecuencias de radio adecuadas para su transmisión al satélite. El satélite recibe estas señales y las retransmite a una estación terrestre que las conecta a Internet.</p>
+            <h3 data-section="main" data-value="satelital">Satelital Modem</h3>
+                <h4 data-section="main" data-value="satelitalq">What is a satellite modem?</h4>
+                    <p data-section="main" data-value="satelitalText">A satellite modem is a device that enables Internet connection via satellite communication. It modulates and demodulates signals to facilitate data transmission between a user's location and a satellite in orbit, allowing for connectivity in remote areas.</p>
+                <h4 data-section="main" data-value="functionsatelital">Functioning of the satellite modem</h4>
+                    <p data-section="main" data-value="functionsatelitalText">The satellite modem modulates digital signals into radio frequency signals for transmission to a satellite. The satellite then relays these signals back to Earth, where they are demodulated by another satellite modem connected to the Internet.</p>
         </div>
 
         <div id="ModemMovil">
-            <h3>Módem móvil</h3>
-                <h4>¿Qué es un módem móvil?</h4>
-                    <p>El módem móvil es un dispositivo que permite la conexión a Internet utilizando redes de telefonía móvil (3G, 4G, 5G). Puede ser un módem USB, un hotspot portátil o una tarjeta SIM integrada en un dispositivo.</p>
-                <h4>Funcionamiento del módem móvil</h4>
-                    <p>El módem móvil se conecta a la red celular y modula las señales digitales en frecuencias de radio utilizadas por la red móvil. La torre celular recibe estas señales y las conecta a Internet.</p>
+            <h3 data-section="main" data-value="movil">Mobile Modem</h3>
+                <h4 data-section="main" data-value="movilq">What is a mobile modem?</h4>
+                    <p data-section="main" data-value="movilText">A mobile modem is a device that provides Internet connectivity using cellular networks. It can be a standalone device or integrated into smartphones, tablets, or laptops, allowing users to access the Internet on the go via 3G, 4G, or 5G networks.</p>
+                <h4 data-section="main" data-value="functionmovil">Functioning of the mobile modem</h4>
+                    <p data-section="main" data-value="functionmovilText">The mobile modem connects to the cellular network using a SIM card and communicates with nearby cell towers to send and receive data, providing Internet access while on the move.</p>
         </div>
     </section>
+    </main>
     
     <footer>
+        <div class="texto">
+            <p data-section="footer" data-value="Rights">All rights belong to the University team composed of Mujahid, Javier and Francisco &copy;</p>
+        </div>
         <a href="#inicio">RETURN</a>
     </footer>
-    <script src="/Francisco/JS/headerJS.js"></script>
+    <script src="headerJS.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

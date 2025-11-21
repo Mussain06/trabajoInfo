@@ -57,15 +57,20 @@
                 </li>
             </ul>
         </nav>
+        <div class="languages">
+            <button class="button-language" data-language="esrouter">Español</button>
+            <button class="button-language" data-language="enrouter">English</button>
+        </div>
     </header>
+    <main>
     <section class="router">
-        <h1 class="tituloPrinc">¿Qué es un Router?</h1>
-        <h4 class="subtitulo">Explora cómo estos dispositivos conectan nuestras redes y el mundo.</h4>
+        <h1 class="tituloPrinc" data-section="main" data-value="router">¿Qué es un Router?</h1>
+        <h4 class="subtitulo" data-section="main" data-value="subtitle">Explora cómo estos dispositivos conectan nuestras redes y el mundo.</h4>
         <div class="defin">
             <div class="containerFlex">
                 <div class="textoContainer">
-                    <h2 class="titDef">Definición: El Director de Tráfico de la Red</h2>
-                    <p class="textDef">
+                    <h2 class="titDef" data-section="main" data-value="defTitle">Definición: El Director de Tráfico de la Red</h2>
+                    <p class="textDef" data-section="main" data-value="defRouter">
                         Un router es un dispositivo de hardware esencial que oopera en la Capa 3 del modelo OSI. Su
                         función
                         principal es conectar dos o más redes informáticas diferentes, como por ejemplo, conectar la red
@@ -79,10 +84,10 @@
                         decisiones inteligentes para enviarlo por la ruta más eficiente posible hacia su destino final.
                     </p>
                 </div>
-                <img src="/Francisco/Imagenes/Router.gif" alt="route gif" class="imgGif">
+                <img src="Router.gif" alt="route gif" class="imgGif">
             </div>
             <div class="cajadef">
-                <h4 class="tituloPeque">Funciones Clave</h4>
+                <h4 class="tituloPeque" data-section="main" data-value="title2">Funciones Clave</h4>
                 <ul>
                     <li class="itemDef"><b>Encaminamiento (Routing): </b> Decide la mejor ruta para enviar paquetes.
                     </li>
@@ -94,19 +99,19 @@
         </div>
     </section>
     <section class="ejemplo">
-        <h2 class="titEjem">Ejemplo: El viaje de un Paquete</h2>
-        <p class="textEjem">
+        <h2 class="titEjem" data-section="main" data-value="travel">Ejemplo: El viaje de un Paquete</h2>
+        <p class="textEjem" data-section="main" data-value="travelEG">
             Ahora con ayuda de las ilustraciones más adelante explicaremos la función más importante del router: el
             enrutamiento de paquetes entre redes. Observemos primero empieza desde ordenador intentando conectarse a
             internet, donde el router está tomando las decisiones en cada paso.
         </p>
         <div class="ilustaciones">
             <div class="itemIlus">
-                <p>🖥️ <b>Tu PC</b></p>
+                <p>🖥️ <b>Your PC</b></p>
                 <p class="colorGris">192.168.1.10</p>
             </div>
             <div class="itemIlus">
-                <p>🏠 <b>Router Casa</b></p>
+                <p>🏠 <b>Home Router</b></p>
                 <p class="colorGris">192.168.1.1</p>
             </div>
             <div class="itemIlus">
@@ -118,76 +123,78 @@
                 <p class="colorGris">(Varios saltos)</p>
             </div>
             <div class="itemIlus">
-                <p>🖥️ <b>Servidor</b></p>
+                <p>🖥️ <b>Server</b></p>
                 <p class="colorGris">IP Destino</p>
             </div>
         </div>
         <ol class="listaOrdenada">
             <li class="itemOrdenada">
-                <p>Tu PC (192.168.1.10) quiere enviar datos al Servidor (IP Destino). Crea un paquete y lo envía a su
+                <p data-section="main" data-value="paso1">Tu PC (192.168.1.10) quiere enviar datos al Servidor (IP Destino). Crea un paquete y lo envía a su
                     puerta de enlace: el Router de Casa.</p>
             </li>
             <li class="itemOrdenada">
-                <p>El Router de Casa (192.168.1.1) recibe el paquete. Revisa su tabla de enrutamiento. Ve que el destino
+                <p data-section="main" data-value="paso2">El Router de Casa (192.168.1.1) recibe el paquete. Revisa su tabla de enrutamiento. Ve que el destino
                     no está en la red local.</p>
             </li>
             <li class="itemOrdenada">
-                <p>El router reenvía el paquete a su propia puerta de enlace: el Router del ISP (Proveedor de Internet).
+                <p data-section="main" data-value="paso3">El router reenvía el paquete a su propia puerta de enlace: el Router del ISP (Proveedor de Internet).
                 </p>
             </li>
             <li class="itemOrdenada">
-                <p>El Router del ISP recibe el paquete. Consulta su (enorme) tabla de enrutamiento y lo reenvía al
+                <p data-section="main" data-value="paso4">El Router del ISP recibe el paquete. Consulta su (enorme) tabla de enrutamiento y lo reenvía al
                     siguiente "salto" en Internet.</p>
             </li>
             <li class="itemOrdenada">
-                <p>El paquete atraviesa la Red de Internet, "saltando" entre múltiples routers de núcleo (Core) de alta
+                <p data-section="main" data-value="paso5">El paquete atraviesa la Red de Internet, "saltando" entre múltiples routers de núcleo (Core) de alta
                     velocidad.</p>
             </li>
             <li class="itemOrdenada">
-                <p>Finalmente, el paquete llega al Router de Borde del centro de datos y es entregado al Servidor de
+                <p data-section="main" data-value="paso6">Finalmente, el paquete llega al Router de Borde del centro de datos y es entregado al Servidor de
                     destino.</p>
             </li>
         </ol>
     </section>
     <section class="tipoRouters">
-        <h2 class="titRouter">Tipos de Routers</h2>
-        <p class="textRouter">No todos los routers son iguales. Se clasifican según su función, escala y capacidad. Para
+        <h2 class="titRouter" data-section="main" data-value="tipos">Tipos de Routers</h2>
+        <p class="textRouter" data-section="main" data-value="difTipos">No todos los routers son iguales. Se clasifican según su función, escala y capacidad. Para
             que te pueda explicar los distintos tipos, al hacer click en los botones te aparecerán la información de
             cada tipo.</p>
         <div class="buttonContainer">
-            <button class="buttonModel active button1">Doméstico</button>
-            <button class="buttonModel desactive button2">Núcleo</button>
-            <button class="buttonModel desactive button3">Distribución</button>
+            <button class="buttonModel active button1" data-section="main" data-value="dome">Doméstico</button>
+            <button class="buttonModel desactive button2" data-section="main" data-value="ker">Núcleo</button>
+            <button class="buttonModel desactive button3" data-section="main" data-value="dist">Distribución</button>
         </div>
     </section>
     <div class="containerTexto apagar">
-            <img src="/Francisco/Imagenes/x.png" alt="x" class="eliminar">
+            <img src="x.png" alt="x" class="eliminar">
             <div class="opcion1 quitar">
-                <h3>Router Doméstico</h3>
-                <p>Es el tipo más común. Conecta los dispositivos de una casa. Generalmente incluye un punto de acceso
+                <h3 data-section="main" data-value="domeTitle">Router Doméstico</h3>
+                <p data-section="main" data-value="defDome">Es el tipo más común. Conecta los dispositivos de una casa. Generalmente incluye un punto de acceso
                     Wi-Fi y funciones de seguridad básicas como NAT y firewall. Está diseñado para ser fácil de usar.
                 </p>
             </div>
             <div class="opcion2 quitar">
-                <h3>Router Núcleo</h3>
-                <p>
+                <h3 data-section="main" data-value="kerTitle">Router Núcleo</h3>
+                <p data-section="main" data-value="defKer">
                     Son los routers más potentes y de mayor capacidad. Son usadas en grandes redes corporativas. Su única tarea es conmutar paquetes a velocidades extremadamente altas. No tienen Wi-Fi y son muy caros y complejos.
                 </p>
             </div>
             <div class="opcion3 quitar">
-                <h3>Router Distribución</h3>
-                <p>
+                <h3 data-section="main" data-value="distTitle">Router Distribución</h3>
+                <p data-section="main" data-value="defDist">
                     Se encuentra en redes empresariales grandes. Actúa como un intermediario entre los routers de "acceso" (donde se conectan los usuarios) y los routers de "núcleo".
                 </p>
             </div>
         </div>
+    </main>
     <footer>
         <div class="texto">
-            <p>Todos Los Derechos al equipo Universitario compuesto Mujahid, Javier y Francisco &copy;</p>
+            <p data-section="footer" data-value="Rights">All rights belong to the University team composed of Mujahid, Javier and Francisco &copy;</p>
         </div>
     </footer>
-    <script src="/Francisco/JS/headerJS.js"></script>
-    <script src="/Francisco/JS/buttonRouter.js"></script>
+    <script src="headerJS.js"></script>
+    <script src="buttonRouter.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -36,6 +36,8 @@ body {
 }
 #articulos ul {
     /*Puse los links de manera similar a la galeria que hicimos, que no se pierda texto si menguamos pantalla*/
+    position: sticky;
+    top: 20%auto;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -175,7 +177,7 @@ footer{
     border-radius: 10px;
 }
 /*---------------CONTENIDO------------*/
-.tiposModem{
+tiposModem{
     max-width: 100%;
     margin: 0 auto;
     display: grid;
@@ -218,4 +220,35 @@ footer a {
 }
 footer a:hover {
     color: #333;
+}
+.languages{
+    position: sticky;
+    bottom: 0px;                     
+    right: 20px;                
+    z-index: 3000;              
+    background: rgba(0, 0, 0, 0.01);
+    padding: 8px 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 8px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.languages button {
+    background: rgba(78, 82, 82, 0.655);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 44px;
+    font-size: 14px;
+}
+
+.languages button:hover {
+    background: rgb(141, 186, 190);
+    color: rgb(0, 0, 0);    
+    border: 2px solid white;    
 }

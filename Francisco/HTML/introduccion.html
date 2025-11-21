@@ -6,11 +6,11 @@
     <title>Redes Informáticas - Introducción</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="/Francisco/CSS/introduccion.css" />
+    <link rel="stylesheet" href="introduccion.css" />
 </head>
 
 <body>
-<header class="cabecera">
+    <header class="cabecera">
         <nav class="menu">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.629 43.457" height="80px" width="200px">
                 <path d="M0 0h43.457v43.457H0z" fill="#fff" />
@@ -23,22 +23,22 @@
             <ul class="listaMenu">
                 <li class="listaMenu_0">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/index.html">Inicio</a></span>
+                        <span><a href="/Francisco/HTML/index.html" data-section="header" data-value="home">Home</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_1">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/introduccion.html">Introduccion</a></span>
+                        <span><a href="/Francisco/HTML/introduccion.html" data-section="header" data-value="introduction">Introduction</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_2">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/redes_informaticas.html">Fundamentos Teóricos</a></span>
+                        <span><a href="/Francisco/HTML/redes_informaticas.html" data-section="header" data-value="theoreticalFundaments">Theoretical fundaments</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_3">
                     <div class="lineaBottom">
-                        <span class="select">Hardware de redes</span>
+                        <span class="select" data-section="header" data-value="networkHardware">Network hardware</span>
                         <div class="spanAfter">
                             <a href="/Francisco/HTML/routers.html">Router</a>
                             <a href="/Francisco/HTML/switch.html">Switch</a>
@@ -48,56 +48,58 @@
                 </li>
                 <li class="listaMenu_4">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/noticia.html">Noticias</a></span>
+                        <span><a href="/Francisco/HTML/noticia.html" data-section="header" data-value="news">News</a></span>
                     </div>
                 </li>
                 <li class="listaMenu_5">
                     <div class="lineaBottom">
-                        <span><a href="/Francisco/HTML/conclusion.html">Conclusión</a></span>
+                        <span><a href="/Francisco/HTML/conclusion.html" data-section="header" data-value="conclusion">Conclusion</a></span>
                     </div>
                 </li>
             </ul>
         </nav>
+        <div class="languages">
+            <button class="button-language" data-language="esintro">Español</button>
+            <button class="button-language" data-language="enintro">English</button>
+        </div>
     </header>
 
-    <section class="contenido">
+    <main class="contenido">
         <div class="texto" id="introduccion">
-            <h2>Introducción</h2>
+            <h2 data-section="main" data-value="intro" >Introduction</h2>
         </div>
         <div class="texto" id="contexto">
-            <h3>Contexto General</h3>
-            <p>Una red informática es un conjunto de dispositivos interconectados que comparten recursos,
-                información y servicios a través de algún medio de transmisión cuyo propósito es facilitar la
-                comunicación y compartir recursos como archivos, datos, acceso a Internet, dispositivos de hardware,
-                aplicaciones y servicios. Sus elementos básicos son los dispositivos finales, los dispositivos de red,
-                los medios de transmisión y los protocolos.</p>
+            <h3 data-section="main" data-value="context">General context</h3>
+            <p data-section="main" data-value="definition" >A computer network is a set of interconnected devices that share resources,
+                information y services through some transmission medium. Its purpose is to facilitate
+                communication and the sharing of resources such as files, data, internet access, hardware,
+                applications, and services. Its basic elements are end devices, network devices,
+                transmission media, and protocols.</p>
         </div>
         <div class="texto" id="importancia">
-            <h3>Importancia de los Dispositivos de Hardware</h3>
-            <p>Son los componentes físicos que establecen y gestionan la comunicación entre distintos equipos de una
-                red.
-                Su importancia reside en que permiten que los dispositivos puedan compartir información o recursos,
-                transmiten
-                datos entre los nodos mediante medios físicos o inalámbricos, dirigen y gestionan el tráfico de red
-                seleccionando la ruta más eficiente, garantizan la seguridad manteniendo la confidencialidad y mejoran
-                el
-                rendimiento proporcionando mayor velocidad y estabilidad. Además, permiten la expansión de la red.
+            <h3 data-section="main" data-value="importance">Importance of hardware devices</h3>
+            <p data-section="main" data-value="texto"> These are the physical components that establish and manage communication between different devices on a network.
+                Their importance lies in the fact that they allow devices to share information or resources,
+                transmit data between nodes via physical or wireless means,
+                direct and manage network traffic by selecting the most efficient route,
+                ensure security by maintaining confidentiality, and
+                improve performance by providing greater speed and stability. They also enable network expansion.
             </p>
         </div>
         <div class="texto" id="objetivo">
-            <h3>Objetivo General</h3>
-            <p>El objetivo general de este proyecto es analizar las redes informáticas, centrándonos especialmente en
-                uno de
-                sus elementos fundamentales: los dispositivos de hardware.
+            <h3 data-section="main" data-value="laMeta">General goal</h3>
+            <p data-section="main" data-value="meta">The main goal of this project is analize the computer networks,especially in one of its most important elements: 
+                hardware devices  
             </p>
         </div>
-    </section>
-    <footer>
+    </main>
+   <footer>
         <div class="texto">
-            <p>Todos Los Derechos al equipo Universitario compuesto Mujahid, Javier y Francisco &copy;</p>
+            <p data-section="footer" data-value="Rights">All rights belong to the University team composed of Mujahid, Javier and Francisco &copy;</p>
         </div>
     </footer>
-    <script src="/Francisco/JS/headerJS.js"></script>
+    <script src="headerJS.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

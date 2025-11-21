@@ -1,0 +1,63 @@
+{
+  "header": {
+    "home": "Inicio",
+    "introduction": "Introducción",
+    "theoreticalFundaments": "Fundamentos Teóricos",
+    "networkHardware": "Hardware de redes",
+    "news": "Noticias",
+    "conclusion": "Conclusión"
+  },
+  "main": {
+    "title": "Switches (Empresa)",
+    "question": "Segmentación de red con VLANs",
+    "definition": "Un switch es un dispositivo que conecta equipos dentro envía datos solo al destinatario correcto. Trabaja en la capa de acceso a la  entre los dispositivos interconectados a una misma red local. En entornos emp son esenciales porque gestionan grandes volúmenes de tráfico, ofrecen  segmentación de red (VLAN), priorización de tráfico (QoS) y seguridad a nivel de puerto.",
+    "tramas":"Conmutación de tramas dentro de una red local",
+    "MAC":"Tabla MAC y proceso de conmutación",
+    "VLAN":"VLANs y segmentación de red",
+    
+    "conmutacionTramas":"Conmutación de tramas dentro de una red local",
+    "defTramas": "Los switches utilizan la conmutación de tramas para enviar datos dentro de una red local. Cuand envía datos, el switch recibe la trama y lee la dirección MAC de destino. Luego, consu para determinar a qué puerto está conectado el dispositivo de destino y envía la trama so Esto reduce el tráfico innecesario en la red y mejora el rendimiento.",
+    "funTramas":"Funcionamiento General",
+    "uno":"Un dispositivo (A) envía una trama hacia otro (B). ",
+    "dos":"El switch recibe la trama en un puerto.",
+    "tres":"Consulta su tabla de direcciones MAC (MAC address table). ",
+    "cuatro":"Si no lo conoce, envía la trama por todos los puertos excepto el de origen (flooding), y aprende la MAC de B.",
+    
+    "tablaMAC":"Tabla MAC y proceso de conmutación",
+    "defMAC":"La tabla MAC es una memoria interna del switch que asocia direcciones MAC con puertos físi direcciones MAC vienen predefinidas en los dispositivos, pues estos dispositivos se conectan al  a cada dirección MAC se le asocia a un puerto. Para que esto suceda hay dos formas, la prime tocar la tabla MAC, pasará lo explicado anteriormente, flooding (necesario) y aprendiendo t direcciones MAC, empezando con el primero, el que envía el dato y asi sucesivamente con l conectados al mismo switch, un vez aprendidas, se marcará una distinción y estas direccion dinamicas con una caducidad de no más de 10 minutos. El otro modo es configurar uno mismo la ta de este modo la entrada será estática, útil para los dispositivos que no estén en constante tr datos",
+    "MACdire":"Direcciones MAC",
+    "MACport":"Puertos Asociados",
+    "MACport1":"Puerto 1",
+    "MACport2":"Puerto 2",
+    "MACport3":"Puerto 3",
+    "MACport4":"Puerto 4",
+    "MACport5":"Puerto 5",
+    "MACtype":"Tipo de Entrada",
+    "MACdevice":"Dispositivo",
+    "MACdevice1":"Servidor principal",
+    "MACdevice2":"Ordenador 1",
+    "MACdevice3":"Ordenador 2",
+    "MACdevice4":"Impresora 1",
+    "MACdevice5":"Impresora 2",
+    "static":"Estática",
+    "dynamic":"Dinámica",
+    "aclaracion": "Cuando un switch recibe una trama en un puerto:  <br> Si la dirección está en la tabla MAC:     El switch envía la trama solo por el puerto asociado. Si la dirección NO está en la tabla MAC:     El switch envía la trama a todos los puertos excepto el de origen. <br> Si no se detecta trafico en un puerto durante un tiempo, la entrada correspondiente en la tabla MAC puede eliminarse para liberar espacio y mantener la tabla actualizada.",
+    "queVLAN":"¿Qué es una VLAN?",
+    "defVLAN":"Permiten dividir una red física en varias redes lógicas independientes, incluso si los dispositivos están conectados al mismo switch físico. Cada VLAN funciona como si fuera una red separada, lo que aumenta laseguridad y mejora la gestión del tráfico. Una empresa puede separar el switch de 8 puertos en 8 puertoso de cualquier otra forma en VLANs para evitar la comunicación entre, por ejemplo, los pisos; recursoshumanos, administración, etc y solo pueden comunicarse entre el mismo VLAN, y si están conectados a una router pueden comunicarse entre ellos.",
+    "funVLAN":"¿Cómo funciona la segmentacion de red?",
+    "funVLANtext":"Cada puerto del switch se asigna a una VLAN específica. Los dispositivos conectados a puertos en la misma VLAN pueden comunicarse directamente entre sí, mientras que la comunicación entre diferentes VLANs requiere un router o un switch de capa 3. Esto mejora la seguridad al limitar el acceso entre segmentos de red y reduce el tráfico innecesario al confinar la comunicación dentro de cada VLAN.",
+    "redCorpo":"Red corporativa",
+    "egRed":"Un ejemplo en una red corporativa: <br> Imagina que en una empresa tienes 3 departamentos. Administracion, Ventas y Soporte técnico",
+    "lugar1": "Departamento",
+    "lugar2": "Administración",
+    "lugar3": "Ventas",
+    "lugar4": "Soporte técnico",
+    "IP": "Rango IP",
+    "permisos": "Restricciones",
+    "permisos1": "Aislado",
+    "permisos2": "Sin restricciones de acceso"
+  },
+  "footer": {
+    "Rights": "Todos Los Derechos al equipo Universitario compuesto por Mujahid, Javier y Francisco &copy;"
+  }
+}
