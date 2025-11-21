@@ -6,6 +6,12 @@
     scroll-behavior: smooth;
 }
 
+svg{
+    height: 80px;
+    width: 200px;
+}
+
+
 a{
     text-decoration: none;
     color: #3b3b3c;

@@ -3,6 +3,12 @@ a{
     color: #3b3b3c;
 }
 
+svg{
+    height: 80px;
+    width: 200px;
+}
+
+
 .cabecera{
     position: sticky;
     top: 0;
