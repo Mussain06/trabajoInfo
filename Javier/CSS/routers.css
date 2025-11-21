@@ -5,7 +5,10 @@
     font-family: "Source Sans 3", sans-serif;
     scroll-behavior: smooth;
 }
-
+svg{
+    height: 80px;
+    width: 200px;
+}
 /*CSS DE LA PÁGINA*/
 
 body {
